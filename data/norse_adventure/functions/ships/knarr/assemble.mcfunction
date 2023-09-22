@@ -34,6 +34,8 @@ tp @e[tag=norse_adventure.current,tag=norse_adventure.ship_part.seat,tag=norse_a
 tp @e[tag=norse_adventure.current,tag=norse_adventure.ship_part.seat,tag=norse_adventure.ship.knarr.port_seat] ^0.5 ^-0.35 ^2.5
 tp @e[tag=norse_adventure.current,tag=norse_adventure.ship_part.seat,tag=norse_adventure.ship.knarr.starboard_seat] ^-0.5 ^-0.35 ^2.5
 
+# Chest
+tp @e[tag=norse_adventure.current,tag=norse_adventure.ship.knarr.chest] ^ ^-0.85 ^-0.5
 
 execute as @e[type=area_effect_cloud,tag=norse_adventure.current] run data modify entity @s Air set value 1b
 execute as @e[type=area_effect_cloud,tag=norse_adventure.current] run data modify entity @s Air set value 0b

@@ -19,6 +19,7 @@
 #define tag norse_adventure.ship.knarr.port_seat
 #define tag norse_adventure.ship.knarr.starboard_seat
 #define tag norse_adventure.ship_part
+#define tag norse_adventure.ship_part.chest
 #define tag norse_adventure.ship_part.seat
 #define tag norse_adventure.ship_part.hull
 #define tag norse_adventure.ship_part.rudder

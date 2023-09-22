@@ -56,6 +56,10 @@ function norse_adventure:ships/common/seat/summon
 execute as @e[type=area_effect_cloud,tag=norse_adventure.untagged] run tag @s add norse_adventure.ship.knarr.starboard_seat
 execute as @e[type=area_effect_cloud,tag=norse_adventure.untagged] run tag @s remove norse_adventure.untagged
 
+# Chest
+function norse_adventure:ships/common/chest/summon
+execute as @e[type=area_effect_cloud,tag=norse_adventure.untagged] run tag @s add norse_adventure.ship.knarr.chest
+execute as @e[type=area_effect_cloud,tag=norse_adventure.untagged] run tag @s remove norse_adventure.untagged
 
 execute as @e[tag=norse_adventure.unregistered] run function norse_adventure:entity_id/register
 scoreboard players add #register norse_adventure.entityID 1
