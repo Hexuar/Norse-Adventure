@@ -1,0 +1,24 @@
+{
+	"type":"crafting_shaped",
+	"pattern":
+	[
+		"Y#Y",
+	    "YXY",
+	    " X "
+	],
+	"key":{
+		"#":{
+		"item":"minecraft:netherite_ingot"
+	},
+	    "X":{
+	    "item":"minecraft:stick"
+	},
+	    "Y":{
+	    "item":"minecraft:diamond"
+	}
+    },
+
+    "result":{
+    "item":"minecraft:knowledge_book"}
+
+}

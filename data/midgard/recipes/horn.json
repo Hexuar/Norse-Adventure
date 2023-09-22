@@ -1,0 +1,26 @@
+{
+	"type":"crafting_shaped",
+	"pattern":
+	[
+		"   ",
+	    "SLG",
+	    " B "
+	],
+	"key":{
+		"S":{
+		"item":"minecraft:string"
+	},
+	    "L":{
+	    "item":"minecraft:leather"
+    },
+    	"G":{
+	    "item":"minecraft:gold_ingot"
+	},
+        "B":{
+	    "item":"minecraft:bone"}
+    },
+
+    "result":{
+    "item":"minecraft:knowledge_book"}
+
+}

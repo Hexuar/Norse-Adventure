@@ -1,0 +1,14 @@
+{
+    "__comment": "Made with TheDestruc7i0n's advancements generator: https://advancements.thedestruc7i0n.ca",
+    "criteria": {
+        "Whiskey": {
+            "trigger": "minecraft:recipe_unlocked",
+            "conditions": {
+                "recipe": "midgard:wooden_waraxe"
+            }
+        }
+    },
+    "rewards": {
+        "function": "midgard:give_items/give_wooden_waraxe"
+    }
+}

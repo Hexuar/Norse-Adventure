@@ -1,0 +1,26 @@
+{
+	"type":"crafting_shaped",
+	"pattern":
+	[
+		"GBG",
+	    "SLS",
+	    "SSS"
+	],
+	"key":{
+		"S":{
+		"item":"minecraft:oak_log"
+	},
+	    "L":{
+	    "item":"minecraft:chest"
+    },
+    	"G":{
+	    "item":"minecraft:red_wool"
+	},
+        "B":{
+	    "item":"minecraft:white_wool"}
+    },
+
+    "result":{
+    "item":"minecraft:knowledge_book"}
+
+}
