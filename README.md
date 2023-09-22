@@ -1,2 +1,2 @@
 # Midgard
-The official Midgård datapack GitHub
+Go viking in Minecraft!
