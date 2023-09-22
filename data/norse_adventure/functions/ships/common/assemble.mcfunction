@@ -1,0 +1,1 @@
+execute if entity @s[tag=norse_adventure.ship.knarr] run function norse_adventure:ships/knarr/assemble

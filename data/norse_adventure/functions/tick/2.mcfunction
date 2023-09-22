@@ -1,0 +1,1 @@
+scoreboard players set #tick2 norse_adventure.value 0

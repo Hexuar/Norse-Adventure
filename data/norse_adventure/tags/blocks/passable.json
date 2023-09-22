@@ -1,0 +1,23 @@
+{
+    "values": [
+        "air",
+        "cave_air",
+        "grass",
+        "tall_grass",
+        "fern",
+        "large_fern",
+        "#flowers",
+        "tripwire",
+        "#all_signs",
+        "#buttons",
+        "#pressure_plates",
+        "#banners",
+        "bamboo_sapling",
+        "#wool_carpets",
+        "moss_carpet",
+        "#corals",
+        "#crops",
+        "sugar_cane",
+        "structure_void"
+    ]
+}

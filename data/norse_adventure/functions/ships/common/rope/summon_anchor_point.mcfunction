@@ -1,0 +1,1 @@
+summon slime ~ ~ ~ {NoGravity:1b,Silent:1b,Invulnerable:1b,Glowing:0b,DeathLootTable:"unset",NoAI:1b,Tags:["norse_adventure.unregistered","norse_adventure.untagged","norse_adventure.unassigned","norse_adventure.entity","norse_adventure.ship_part.rope","norse_adventure.ship_part.rope.anchor_point"],ActiveEffects:[{Id:14,Amplifier:1b,Duration:-1,ShowParticles:0b}]}
