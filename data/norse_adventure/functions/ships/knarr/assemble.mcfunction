@@ -2,11 +2,11 @@
 
 # Front
 tp @e[tag=norse_adventure.current,tag=norse_adventure.ship.knarr.bow_rope,tag=norse_adventure.ship_part.rope.anchor_point.a] ^ ^1.1 ^5.3
-tp @e[tag=norse_adventure.current,tag=norse_adventure.ship.knarr.bow_rope,tag=norse_adventure.ship_part.rope.anchor_point.b] ^ ^6.8 ^
+tp @e[tag=norse_adventure.current,tag=norse_adventure.ship.knarr.bow_rope,tag=norse_adventure.ship_part.rope.anchor_point.b] ^ ^6.7 ^
 
 # Back
 tp @e[tag=norse_adventure.current,tag=norse_adventure.ship.knarr.aft_rope,tag=norse_adventure.ship_part.rope.anchor_point.a] ^ ^1.1 ^-5.7
-tp @e[tag=norse_adventure.current,tag=norse_adventure.ship.knarr.aft_rope,tag=norse_adventure.ship_part.rope.anchor_point.b] ^ ^6.8 ^
+tp @e[tag=norse_adventure.current,tag=norse_adventure.ship.knarr.aft_rope,tag=norse_adventure.ship_part.rope.anchor_point.b] ^ ^6.7 ^
 
 # Upper starboard
 tp @e[tag=norse_adventure.current,tag=norse_adventure.ship.knarr.upper_starboard_rope,tag=norse_adventure.ship_part.rope.anchor_point.a] ^-1.2 ^0.4 ^-3.0
@@ -42,7 +42,7 @@ tp @e[tag=norse_adventure.current,tag=norse_adventure.ship_part.seat,tag=norse_a
 
 
 # Chest
-tp @e[tag=norse_adventure.current,tag=norse_adventure.ship.knarr.chest] ^ ^-0.85 ^-0.5
+tp @e[tag=norse_adventure.current,tag=norse_adventure.ship.knarr.chest] ^ ^-0.85 ^-0.45
 
 
 # Sail
