@@ -33,7 +33,7 @@ tp @e[tag=norse_adventure.current,tag=norse_adventure.ship.knarr.floor_-3] ^ ^0.
 tp @e[tag=norse_adventure.current,tag=norse_adventure.ship_part.rudder] ^-1.18 ^0.7 ^-3
 
 # Sail interaction
-tp @e[type=area_effect_cloud,tag=norse_adventure.current,tag=norse_adventure.ship_part.sail] ^1.25 ^0.5 ^-2.7
+tp @e[type=area_effect_cloud,tag=norse_adventure.current,tag=norse_adventure.ship_part.sail] ^1.25 ^0.2 ^-2.7
 
 # Seats
 tp @e[tag=norse_adventure.current,tag=norse_adventure.ship_part.seat,tag=norse_adventure.ship.knarr.steering_seat] ^ ^-0.225 ^-3.5

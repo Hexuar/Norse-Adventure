@@ -14,10 +14,10 @@ summon item_display ~ ~ ~ {Tags:["norse_adventure.unregistered","norse_adventure
 ride @e[type=item_display,tag=norse_adventure.ship_part.sail,tag=norse_adventure.unregistered,sort=nearest,limit=1] mount @s
 
 # Sail interaction
-summon minecraft:area_effect_cloud ~ ~ ~ {Age: -2147483648, Duration: -1, WaitTime: -2147483648, Tags: ["norse_adventure.unregistered","norse_adventure.entity","norse_adventure.ship_part","norse_adventure.ship_part.sail"],Passengers:[{id:"minecraft:interaction",Tags:["norse_adventure.unregistered","norse_adventure.entity","norse_adventure.ship_part","norse_adventure.ship_part.sail"],width:0.6f,height:0.4f}]}
+summon minecraft:area_effect_cloud ~ ~ ~ {Age: -2147483648, Duration: -1, WaitTime: -2147483648, Tags: ["norse_adventure.unregistered","norse_adventure.entity","norse_adventure.ship_part","norse_adventure.ship_part.sail"],Passengers:[{id:"minecraft:interaction",Tags:["norse_adventure.unregistered","norse_adventure.entity","norse_adventure.ship_part","norse_adventure.ship_part.sail"],width:0.6f,height:0.6f}]}
 
 # Rudder
-summon area_effect_cloud ~ ~ ~ {Tags:["norse_adventure.entity","norse_adventure.ship_part.rudder","norse_adventure.unregistered"],Age:-2147483648,Duration:-1,WaitTime:-2147483648,Passengers:[{id:"minecraft:item_display",Tags:["norse_adventure.entity","norse_adventure.ship_part.rudder","norse_adventure.unregistered"],item:{id:"minecraft:command_block",Count:1b,tag:{CustomModelData:2221504}},teleport_duration:5,transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[-0.3f,0f,0.12f],scale:[4f,4f,4f]}},{id:"minecraft:interaction",width:0.6f,height:0.3f,Tags:["norse_adventure.entity","norse_adventure.ship_part.rudder","norse_adventure.unregistered"]}]}
+summon area_effect_cloud ~ ~ ~ {Tags:["norse_adventure.entity","norse_adventure.ship_part.rudder","norse_adventure.unregistered"],Age:-2147483648,Duration:-1,WaitTime:-2147483648,Passengers:[{id:"minecraft:item_display",Tags:["norse_adventure.entity","norse_adventure.ship_part.rudder","norse_adventure.unregistered"],item:{id:"minecraft:command_block",Count:1b,tag:{CustomModelData:2221504}},teleport_duration:5,transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[-0.3f,0f,0.12f],scale:[4f,4f,4f]}},{id:"minecraft:interaction",width:0.6f,height:0.6f,Tags:["norse_adventure.entity","norse_adventure.ship_part.rudder","norse_adventure.unregistered"]}]}
 
 # Chest
 function norse_adventure:ships/common/chest/summon
