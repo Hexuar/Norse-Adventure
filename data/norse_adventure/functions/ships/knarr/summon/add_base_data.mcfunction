@@ -68,6 +68,14 @@ tag @e[type=marker,tag=norse_adventure.ship_part.floor,tag=norse_adventure.untag
 
 
 
+## Collision detectors
+function norse_adventure:ships/common/collision_detector/summon/bow
+execute as @e[type=marker,tag=norse_adventure.ship_part.collision_detector,tag=norse_adventure.untagged] run tag @s add norse_adventure.ship.knarr.collision_detector.bow
+tag @e[type=marker,tag=norse_adventure.ship_part.collision_detector,tag=norse_adventure.untagged] remove norse_adventure.untagged
+
+function norse_adventure:ships/common/collision_detector/summon/aft
+execute as @e[type=marker,tag=norse_adventure.ship_part.collision_detector,tag=norse_adventure.untagged] run tag @s add norse_adventure.ship.knarr.collision_detector.aft
+tag @e[type=marker,tag=norse_adventure.ship_part.collision_detector,tag=norse_adventure.untagged] remove norse_adventure.untagged
 
 
 ## Ropes

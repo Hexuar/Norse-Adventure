@@ -1,8 +1,12 @@
 # Get current
 function norse_adventure:entity_id/get
 
+
+
 # Assemble
 function norse_adventure:ships/common/assemble
+
+
 
 # Interaction
 scoreboard players add @s norse_adventure.rotation 0
@@ -18,6 +22,13 @@ execute as @e[type=interaction,tag=norse_adventure.current,sort=nearest] run dat
 execute as @e[type=interaction,tag=norse_adventure.current,sort=nearest] run data remove entity @s attack
 
 
+# Collisions
+execute as @e[type=marker,tag=norse_adventure.current,tag=norse_adventure.ship_part.collision_detector] at @s run function norse_adventure:ships/common/collision_detector/check
+
+execute if score #collision_bow norse_adventure.value matches 1 if score @s norse_adventure.speed matches 1.. run scoreboard players set @s norse_adventure.speed 0
+execute if score #collision_aft norse_adventure.value matches 1 if score @s norse_adventure.speed matches ..-1 run scoreboard players set @s norse_adventure.speed 0
+
+
 # Move
 
 execute as @e[type=pig,tag=norse_adventure.current,tag=norse_adventure.ship.knarr.steering_seat] on passengers run tag @e[type=area_effect_cloud,tag=norse_adventure.current,tag=norse_adventure.ship.knarr] add norse_adventure.dont_stop_ship
@@ -30,13 +41,19 @@ execute store result storage norse_adventure:data move.speed float 0.1 run score
 execute store result storage norse_adventure:data move.rotation float 0.1 run scoreboard players get @s norse_adventure.rotation
 function norse_adventure:ships/common/move with storage norse_adventure:data move
 
+
+
 # Floors
 execute as @e[type=marker,tag=norse_adventure.ship_part.floor] at @s run function norse_adventure:ships/common/floor/tick
 
+
+
 # Gravity
-execute if block ~ ~-2 ~ #norse_adventure:passable run tp ~ ~-1 ~
-execute unless block ~ ~-2 ~ #norse_adventure:passable if block ~ ~-1 ~ #norse_adventure:passable run tp ~ ~-0.5 ~
-execute unless block ~ ~-1 ~ #norse_adventure:passable if block ~ ~ ~ #norse_adventure:passable run tp ~ ~-0.1 ~
+execute if block ~ ~-2 ~ #norse_adventure:fallable run tp ~ ~-1 ~
+execute unless block ~ ~-2 ~ #norse_adventure:fallable if block ~ ~-1 ~ #norse_adventure:fallable run tp ~ ~-0.5 ~
+execute unless block ~ ~-1 ~ #norse_adventure:fallable if block ~ ~ ~ #norse_adventure:fallable run tp ~ ~-0.1 ~
+
+
 
 # Remove tags
 tag @e remove norse_adventure.current

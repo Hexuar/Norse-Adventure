@@ -1,0 +1,1 @@
+summon marker ~ ~ ~ {Tags:["norse_adventure.unregistered","norse_adventure.untagged","norse_adventure.entity","norse_adventure.ship_part.collision_detector","norse_adventure.ship_part.collision_detector.bow"]}

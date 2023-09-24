@@ -9,11 +9,11 @@ tp @e[tag=norse_adventure.current,tag=norse_adventure.ship.knarr.aft_rope,tag=no
 tp @e[tag=norse_adventure.current,tag=norse_adventure.ship.knarr.aft_rope,tag=norse_adventure.ship_part.rope.anchor_point.b] ^ ^6.7 ^
 
 # Upper starboard
-tp @e[tag=norse_adventure.current,tag=norse_adventure.ship.knarr.upper_starboard_rope,tag=norse_adventure.ship_part.rope.anchor_point.a] ^-1.2 ^0.4 ^-3.0
+tp @e[tag=norse_adventure.current,tag=norse_adventure.ship.knarr.upper_starboard_rope,tag=norse_adventure.ship_part.rope.anchor_point.a] ^-1.2 ^0.4 ^-2.5
 tp @e[tag=norse_adventure.current,tag=norse_adventure.ship.knarr.upper_starboard_rope,tag=norse_adventure.ship_part.rope.anchor_point.b] ^-4.3 ^5.6 ^0.2
 
 # Upper port
-tp @e[tag=norse_adventure.current,tag=norse_adventure.ship.knarr.upper_port_rope,tag=norse_adventure.ship_part.rope.anchor_point.a] ^1.2 ^0.4 ^-3.0
+tp @e[tag=norse_adventure.current,tag=norse_adventure.ship.knarr.upper_port_rope,tag=norse_adventure.ship_part.rope.anchor_point.a] ^1.2 ^0.4 ^-2.5
 tp @e[tag=norse_adventure.current,tag=norse_adventure.ship.knarr.upper_port_rope,tag=norse_adventure.ship_part.rope.anchor_point.b] ^4.3 ^5.6 ^0.2
 
 
@@ -28,9 +28,19 @@ tp @e[tag=norse_adventure.current,tag=norse_adventure.ship.knarr.floor_-2] ^ ^0.
 tp @e[tag=norse_adventure.current,tag=norse_adventure.ship.knarr.floor_-3] ^ ^0.3 ^-4
 
 
+# Collision Detectors
+tp @e[tag=norse_adventure.current,tag=norse_adventure.ship.knarr.collision_detector.bow] ^ ^ ^5
+tp @e[tag=norse_adventure.current,tag=norse_adventure.ship.knarr.collision_detector.aft] ^ ^ ^-5
+
 
 # Rudder
-tp @e[tag=norse_adventure.current,tag=norse_adventure.ship_part.rudder] ^-1.18 ^0.7 ^-3
+tp @e[tag=norse_adventure.current,tag=norse_adventure.ship_part.rudder] ^-1.18 ^0.7 ^-3 ~ ~
+
+execute store result score #rudder_rotation norse_adventure.value run data get entity @e[type=area_effect_cloud,tag=norse_adventure.current,tag=norse_adventure.ship.knarr,sort=nearest,limit=1] Rotation[0] 1000
+scoreboard players operation #dr norse_adventure.value = @s norse_adventure.rotation
+scoreboard players operation #dr norse_adventure.value *= #1000 norse_adventure.constant
+scoreboard players operation #rudder_rotation norse_adventure.value -= #dr norse_adventure.value
+execute store result entity @e[type=item_display,tag=norse_adventure.current,tag=norse_adventure.ship_part.rudder,limit=1] Rotation[0] float 0.001 run scoreboard players get #rudder_rotation norse_adventure.value
 
 # Sail interaction
 tp @e[type=area_effect_cloud,tag=norse_adventure.current,tag=norse_adventure.ship_part.sail] ^1.25 ^0.2 ^-2.7
@@ -51,7 +61,7 @@ execute if score @s norse_adventure.speed matches 3..4 run function norse_advent
 execute if score @s norse_adventure.speed matches 5.. run function norse_adventure:ships/knarr/sail/full
 
 # Area effect clouds
-execute as @e[type=!area_effect_cloud,tag=norse_adventure.current] run data modify entity @s Rotation set from entity @e[type=area_effect_cloud,tag=norse_adventure.current,tag=norse_adventure.ship.knarr,sort=nearest,limit=1] Rotation
+execute as @e[type=!area_effect_cloud,tag=norse_adventure.current,tag=!norse_adventure.ship_part.rudder] run data modify entity @s Rotation set from entity @e[type=area_effect_cloud,tag=norse_adventure.current,tag=norse_adventure.ship.knarr,sort=nearest,limit=1] Rotation
 
 execute as @e[type=area_effect_cloud,tag=norse_adventure.current] run data modify entity @s Air set value 1b
 execute as @e[type=area_effect_cloud,tag=norse_adventure.current] run data modify entity @s Air set value 0b
