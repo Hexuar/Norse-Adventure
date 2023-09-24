@@ -15,8 +15,8 @@ scoreboard players add @s norse_adventure.speed 0
 execute if data entity @e[type=interaction,tag=norse_adventure.ship_part.rudder,tag=norse_adventure.current,sort=nearest,limit=1] interaction if score @s norse_adventure.rotation < @s norse_adventure.max_rotation run scoreboard players operation @s norse_adventure.rotation += @s norse_adventure.rotation_increment
 execute if data entity @e[type=interaction,tag=norse_adventure.ship_part.rudder,tag=norse_adventure.current,sort=nearest,limit=1] attack if score @s norse_adventure.rotation > @s norse_adventure.min_rotation run scoreboard players operation @s norse_adventure.rotation -= @s norse_adventure.rotation_increment
 
-execute if data entity @e[type=interaction,tag=norse_adventure.ship_part.sail,tag=norse_adventure.current,sort=nearest,limit=1] attack if score @s norse_adventure.speed < @s norse_adventure.max_speed run scoreboard players operation @s norse_adventure.speed += @s norse_adventure.speed_increment
-execute if data entity @e[type=interaction,tag=norse_adventure.ship_part.sail,tag=norse_adventure.current,sort=nearest,limit=1] interaction if score @s norse_adventure.speed > @s norse_adventure.min_speed run scoreboard players operation @s norse_adventure.speed -= @s norse_adventure.speed_increment
+execute if data entity @e[type=interaction,tag=norse_adventure.ship_part.sail_rope,tag=norse_adventure.current,sort=nearest,limit=1] attack if score @s norse_adventure.speed < @s norse_adventure.max_speed run scoreboard players operation @s norse_adventure.speed += @s norse_adventure.speed_increment
+execute if data entity @e[type=interaction,tag=norse_adventure.ship_part.sail_rope,tag=norse_adventure.current,sort=nearest,limit=1] interaction if score @s norse_adventure.speed > @s norse_adventure.min_speed run scoreboard players operation @s norse_adventure.speed -= @s norse_adventure.speed_increment
 
 execute as @e[type=interaction,tag=norse_adventure.current,sort=nearest] run data remove entity @s interaction
 execute as @e[type=interaction,tag=norse_adventure.current,sort=nearest] run data remove entity @s attack

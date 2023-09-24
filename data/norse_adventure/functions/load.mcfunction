@@ -26,6 +26,7 @@
 #define tag norse_adventure.ship_part.hull
 #define tag norse_adventure.ship_part.rudder
 #define tag norse_adventure.ship_part.sail
+#define tag norse_adventure.ship_part.sail_rope
 #define tag norse_adventure.ship_part.rope
 #define tag norse_adventure.ship_part.rope.anchor_point
 #define tag norse_adventure.ship_part.rope.anchor_point.a

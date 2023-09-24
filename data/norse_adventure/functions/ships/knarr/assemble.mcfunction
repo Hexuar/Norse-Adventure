@@ -1,23 +1,3 @@
-## Ropes
-
-# Front
-tp @e[tag=norse_adventure.current,tag=norse_adventure.ship.knarr.bow_rope,tag=norse_adventure.ship_part.rope.anchor_point.a] ^ ^1.1 ^5.3
-tp @e[tag=norse_adventure.current,tag=norse_adventure.ship.knarr.bow_rope,tag=norse_adventure.ship_part.rope.anchor_point.b] ^ ^6.7 ^
-
-# Back
-tp @e[tag=norse_adventure.current,tag=norse_adventure.ship.knarr.aft_rope,tag=norse_adventure.ship_part.rope.anchor_point.a] ^ ^1.1 ^-5.7
-tp @e[tag=norse_adventure.current,tag=norse_adventure.ship.knarr.aft_rope,tag=norse_adventure.ship_part.rope.anchor_point.b] ^ ^6.7 ^
-
-# Upper starboard
-tp @e[tag=norse_adventure.current,tag=norse_adventure.ship.knarr.upper_starboard_rope,tag=norse_adventure.ship_part.rope.anchor_point.a] ^-1.2 ^0.4 ^-2.5
-tp @e[tag=norse_adventure.current,tag=norse_adventure.ship.knarr.upper_starboard_rope,tag=norse_adventure.ship_part.rope.anchor_point.b] ^-4.3 ^5.6 ^0.2
-
-# Upper port
-tp @e[tag=norse_adventure.current,tag=norse_adventure.ship.knarr.upper_port_rope,tag=norse_adventure.ship_part.rope.anchor_point.a] ^1.2 ^0.4 ^-2.5
-tp @e[tag=norse_adventure.current,tag=norse_adventure.ship.knarr.upper_port_rope,tag=norse_adventure.ship_part.rope.anchor_point.b] ^4.3 ^5.6 ^0.2
-
-
-
 # Floors
 tp @e[tag=norse_adventure.current,tag=norse_adventure.ship.knarr.floor_3] ^ ^0.3 ^4
 tp @e[tag=norse_adventure.current,tag=norse_adventure.ship.knarr.floor_2] ^ ^0.3 ^3
@@ -43,7 +23,7 @@ scoreboard players operation #rudder_rotation norse_adventure.value -= #dr norse
 execute store result entity @e[type=item_display,tag=norse_adventure.current,tag=norse_adventure.ship_part.rudder,limit=1] Rotation[0] float 0.001 run scoreboard players get #rudder_rotation norse_adventure.value
 
 # Sail interaction
-tp @e[type=area_effect_cloud,tag=norse_adventure.current,tag=norse_adventure.ship_part.sail] ^1.25 ^0.2 ^-2.7
+tp @e[type=area_effect_cloud,tag=norse_adventure.current,tag=norse_adventure.ship_part.sail_rope] ^1.25 ^0.375 ^-3.1
 
 # Seats
 tp @e[tag=norse_adventure.current,tag=norse_adventure.ship_part.seat,tag=norse_adventure.ship.knarr.steering_seat] ^ ^-0.225 ^-3.5
