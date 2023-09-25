@@ -27,7 +27,7 @@ execute if score #collision_aft norse_adventure.value matches 1 if score @s nors
 
 
 # Move
-execute as @e[type=pig,tag=norse_adventure.current,tag=norse_adventure.ship.knarr.steering_seat] on passengers run tag @e[type=area_effect_cloud,tag=norse_adventure.current,tag=norse_adventure.ship.knarr] add norse_adventure.dont_stop_ship
+execute as @e[type=pig,tag=norse_adventure.current,tag=norse_adventure.ship.karve.steering_seat] on passengers run tag @e[type=area_effect_cloud,tag=norse_adventure.current,tag=norse_adventure.ship.karve] add norse_adventure.dont_stop_ship
 scoreboard players set @s[tag=!norse_adventure.dont_stop_ship] norse_adventure.speed 0
 scoreboard players set @s[tag=!norse_adventure.dont_stop_ship] norse_adventure.rotation 0
 tag @s remove norse_adventure.dont_stop_ship
