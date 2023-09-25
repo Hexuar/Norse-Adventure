@@ -119,6 +119,7 @@ tag @e[type=bat,tag=norse_adventure.ship_part.rope.anchor_point,tag=norse_advent
 # Steering Seat
 function norse_adventure:ships/common/seat/summon
 execute as @e[tag=norse_adventure.ship_part.seat,tag=norse_adventure.untagged] run tag @s add norse_adventure.ship.karve.steering_seat
+execute as @e[tag=norse_adventure.ship_part.seat,tag=norse_adventure.untagged] run tag @s add norse_adventure.ship_part.steering_seat
 execute as @e[tag=norse_adventure.ship_part.seat,tag=norse_adventure.untagged] run tag @s remove norse_adventure.untagged
 
 # Port Seat

@@ -14,7 +14,6 @@ execute if data entity @e[type=interaction,tag=norse_adventure.ship_part.rudder,
 execute if data entity @e[type=interaction,tag=norse_adventure.ship_part.sail_rope,tag=norse_adventure.current,sort=nearest,limit=1] attack if score @s norse_adventure.speed < @s norse_adventure.max_speed run scoreboard players operation @s norse_adventure.speed += @s norse_adventure.speed_increment
 execute if data entity @e[type=interaction,tag=norse_adventure.ship_part.sail_rope,tag=norse_adventure.current,sort=nearest,limit=1] interaction if score @s norse_adventure.speed > @s norse_adventure.min_speed run scoreboard players operation @s norse_adventure.speed -= @s norse_adventure.speed_increment
 
-
 execute as @e[type=interaction,tag=norse_adventure.current,sort=nearest] run data remove entity @s interaction
 execute as @e[type=interaction,tag=norse_adventure.current,sort=nearest] run data remove entity @s attack
 
@@ -27,7 +26,7 @@ execute if score #collision_aft norse_adventure.value matches 1 if score @s nors
 
 
 # Move
-execute as @e[type=pig,tag=norse_adventure.current,tag=norse_adventure.ship.karve.steering_seat] on passengers run tag @e[type=area_effect_cloud,tag=norse_adventure.current,tag=norse_adventure.ship.karve] add norse_adventure.dont_stop_ship
+execute as @e[type=pig,tag=norse_adventure.current,tag=norse_adventure.ship_part.steering_seat] on passengers run tag @e[type=area_effect_cloud,tag=norse_adventure.current,tag=norse_adventure.ship] add norse_adventure.dont_stop_ship
 scoreboard players set @s[tag=!norse_adventure.dont_stop_ship] norse_adventure.speed 0
 scoreboard players set @s[tag=!norse_adventure.dont_stop_ship] norse_adventure.rotation 0
 tag @s remove norse_adventure.dont_stop_ship
@@ -54,7 +53,6 @@ execute if block ~ ~-2 ~ #norse_adventure:fallable run tp ~ ~-1 ~
 execute unless block ~ ~-2 ~ #norse_adventure:fallable if block ~ ~-1 ~ #norse_adventure:fallable run tp ~ ~-0.5 ~
 execute unless block ~ ~-1 ~ #norse_adventure:fallable if block ~ ~ ~ #norse_adventure:fallable run tp ~ ~-0.1 ~
 execute if block ~ ~ ~ #norse_adventure:fallable run scoreboard players set #assemble norse_adventure.value 1
-
 
 # Remove tags
 tag @e[type=#norse_adventure:ship_entities,tag=norse_adventure.current] remove norse_adventure.current

@@ -23,6 +23,7 @@
 #define tag norse_adventure.ship_part.floor
 #define tag norse_adventure.ship_part.chest
 #define tag norse_adventure.ship_part.seat
+#define tag norse_adventure.ship_part.steering_seat
 #define tag norse_adventure.ship_part.hull
 #define tag norse_adventure.ship_part.rudder
 #define tag norse_adventure.ship_part.sail
