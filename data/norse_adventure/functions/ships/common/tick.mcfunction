@@ -2,25 +2,18 @@
 function norse_adventure:entity_id/get
 
 
-
-# Assemble
-function norse_adventure:ships/common/assemble
-
-
 # Seat fix
 execute as @e[type=area_effect_cloud,tag=norse_adventure.current,tag=norse_adventure.ship_part.seat,nbt=!{Passengers:[]}] at @s run function norse_adventure:ships/common/seat/fix
 
 
 
 # Interaction
-scoreboard players add @s norse_adventure.rotation 0
-scoreboard players add @s norse_adventure.speed 0
-
 execute if data entity @e[type=interaction,tag=norse_adventure.ship_part.rudder,tag=norse_adventure.current,sort=nearest,limit=1] interaction if score @s norse_adventure.rotation < @s norse_adventure.max_rotation run scoreboard players operation @s norse_adventure.rotation += @s norse_adventure.rotation_increment
 execute if data entity @e[type=interaction,tag=norse_adventure.ship_part.rudder,tag=norse_adventure.current,sort=nearest,limit=1] attack if score @s norse_adventure.rotation > @s norse_adventure.min_rotation run scoreboard players operation @s norse_adventure.rotation -= @s norse_adventure.rotation_increment
 
 execute if data entity @e[type=interaction,tag=norse_adventure.ship_part.sail_rope,tag=norse_adventure.current,sort=nearest,limit=1] attack if score @s norse_adventure.speed < @s norse_adventure.max_speed run scoreboard players operation @s norse_adventure.speed += @s norse_adventure.speed_increment
 execute if data entity @e[type=interaction,tag=norse_adventure.ship_part.sail_rope,tag=norse_adventure.current,sort=nearest,limit=1] interaction if score @s norse_adventure.speed > @s norse_adventure.min_speed run scoreboard players operation @s norse_adventure.speed -= @s norse_adventure.speed_increment
+
 
 execute as @e[type=interaction,tag=norse_adventure.current,sort=nearest] run data remove entity @s interaction
 execute as @e[type=interaction,tag=norse_adventure.current,sort=nearest] run data remove entity @s attack
@@ -50,13 +43,18 @@ function norse_adventure:ships/common/move with storage norse_adventure:data mov
 execute as @e[type=marker,tag=norse_adventure.ship_part.floor] at @s run function norse_adventure:ships/common/floor/tick
 
 
+# Assemble
+execute unless score @s norse_adventure.speed matches 0 run scoreboard players set #assemble norse_adventure.value 1
+execute unless score @s norse_adventure.rotation matches 0 run scoreboard players set #assemble norse_adventure.value 1
+execute if score #assemble norse_adventure.value matches 1 run function norse_adventure:ships/common/assemble
+
 
 # Gravity
 execute if block ~ ~-2 ~ #norse_adventure:fallable run tp ~ ~-1 ~
 execute unless block ~ ~-2 ~ #norse_adventure:fallable if block ~ ~-1 ~ #norse_adventure:fallable run tp ~ ~-0.5 ~
 execute unless block ~ ~-1 ~ #norse_adventure:fallable if block ~ ~ ~ #norse_adventure:fallable run tp ~ ~-0.1 ~
-
+execute if block ~ ~ ~ #norse_adventure:fallable run scoreboard players set #assemble norse_adventure.value 1
 
 
 # Remove tags
-tag @e remove norse_adventure.current
+tag @e[type=#norse_adventure:ship_entities,tag=norse_adventure.current] remove norse_adventure.current

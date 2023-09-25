@@ -132,6 +132,9 @@ execute as @e[tag=norse_adventure.ship_part.seat,tag=norse_adventure.untagged] r
 execute as @e[tag=norse_adventure.ship_part.seat,tag=norse_adventure.untagged] run tag @s remove norse_adventure.untagged
 
 
+# Set scores
+scoreboard players set @s norse_adventure.rotation 0
+scoreboard players set @s norse_adventure.speed 0
 
 
 

@@ -1,1 +1,1 @@
-execute as @e[type=area_effect_cloud,tag=norse_adventure.ship] at @s run function norse_adventure:ships/common/tick
+execute as @e[type=area_effect_cloud,tag=norse_adventure.ship] at @s if entity @p[distance=..10] run function norse_adventure:ships/common/tick
