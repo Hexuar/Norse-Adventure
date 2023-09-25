@@ -7,6 +7,10 @@ function norse_adventure:entity_id/get
 function norse_adventure:ships/common/assemble
 
 
+# Seat fix
+execute as @e[type=area_effect_cloud,tag=norse_adventure.current,tag=norse_adventure.ship_part.seat,nbt=!{Passengers:[]}] at @s run function norse_adventure:ships/common/seat/fix
+
+
 
 # Interaction
 scoreboard players add @s norse_adventure.rotation 0
@@ -30,7 +34,6 @@ execute if score #collision_aft norse_adventure.value matches 1 if score @s nors
 
 
 # Move
-
 execute as @e[type=pig,tag=norse_adventure.current,tag=norse_adventure.ship.knarr.steering_seat] on passengers run tag @e[type=area_effect_cloud,tag=norse_adventure.current,tag=norse_adventure.ship.knarr] add norse_adventure.dont_stop_ship
 scoreboard players set @s[tag=!norse_adventure.dont_stop_ship] norse_adventure.speed 0
 scoreboard players set @s[tag=!norse_adventure.dont_stop_ship] norse_adventure.rotation 0
