@@ -8,6 +8,10 @@
 #define tag norse_adventure.unassigned
 #define tag norse_adventure.untagged
 #define tag norse_adventure.entity
+#define tag norse_adventure.spawn
+#define tag norse_adventure.spawn.karve
+#define tag norse_adventure.spawn.knarr
+#define tag norse_adventure.spawn.skeid
 #define tag norse_adventure.ship
 #define tag norse_adventure.ship.karve
 #define tag norse_adventure.ship.karve.bow_rope
@@ -20,6 +24,7 @@
 #define tag norse_adventure.ship.karve.port_seat
 #define tag norse_adventure.ship.karve.starboard_seat
 #define tag norse_adventure.ship_part
+#define tag norse_adventure.ship_part.hitbox
 #define tag norse_adventure.ship_part.floor
 #define tag norse_adventure.ship_part.chest
 #define tag norse_adventure.ship_part.seat

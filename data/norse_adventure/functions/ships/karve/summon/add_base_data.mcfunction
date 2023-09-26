@@ -133,11 +133,5 @@ execute as @e[tag=norse_adventure.ship_part.seat,tag=norse_adventure.untagged] r
 execute as @e[tag=norse_adventure.ship_part.seat,tag=norse_adventure.untagged] run tag @s remove norse_adventure.untagged
 
 
-# Set scores
-scoreboard players set @s norse_adventure.rotation 0
-scoreboard players set @s norse_adventure.speed 0
-
-
-
-execute as @e[tag=norse_adventure.unregistered] run function norse_adventure:entity_id/register
-scoreboard players add #register norse_adventure.entityID 1
+# Common
+function norse_adventure:ships/common/summon

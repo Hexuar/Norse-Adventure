@@ -2,9 +2,15 @@
 function norse_adventure:entity_id/get
 
 
+
+# Destroy
+scoreboard players set #destroy norse_adventure.value 1
+execute on passengers if entity @s[type=villager,tag=norse_adventure.ship_part.hitbox] run scoreboard players set #destroy norse_adventure.value 0
+execute if score #destroy norse_adventure.value matches 1 run function norse_adventure:ships/common/destroy
+
+
 # Seat fix
 execute as @e[type=area_effect_cloud,tag=norse_adventure.current,tag=norse_adventure.ship_part.seat,nbt=!{Passengers:[]}] at @s run function norse_adventure:ships/common/seat/fix
-
 
 
 # Interaction
@@ -45,6 +51,7 @@ execute as @e[type=marker,tag=norse_adventure.ship_part.floor] at @s run functio
 # Assemble
 execute unless score @s norse_adventure.speed matches 0 run scoreboard players set #assemble norse_adventure.value 1
 execute unless score @s norse_adventure.rotation matches 0 run scoreboard players set #assemble norse_adventure.value 1
+execute if entity @e[type=area_effect_cloud,tag=norse_adventure.ship_part.rudder,distance=..1] run scoreboard players set #assemble norse_adventure.value 1
 execute if score #assemble norse_adventure.value matches 1 run function norse_adventure:ships/common/assemble
 
 # Gravity
