@@ -1,0 +1,27 @@
+{
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:bat_spawn_egg",
+            "functions": [
+              {
+                "function": "minecraft:set_name",
+                "name": {
+                  "translate": "item.norse_adventure.karve",
+                  "italic": false
+                }
+              },
+              {
+                "function": "minecraft:set_nbt",
+                "tag": "{CustomModelData:2221500,EntityTag:{id:\"minecraft:marker\",Tags:[\"norse_adventure.entity\",\"norse_adventure.spawn\",\"norse_adventure.spawn.karve\"]}}"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+  
