@@ -1,5 +1,6 @@
 {
 	"values": [
-		"norse_adventure:tick/1"
+		"norse_adventure:tick/1",
+		"norse_adventure:tick/manager"
 	]
 }
