@@ -45,8 +45,7 @@ execute as @e[type=marker,tag=norse_adventure.ship_part.floor] at @s run functio
 # Assemble
 execute unless score @s norse_adventure.speed matches 0 run scoreboard players set #assemble norse_adventure.value 1
 execute unless score @s norse_adventure.rotation matches 0 run scoreboard players set #assemble norse_adventure.value 1
-#execute if score #assemble norse_adventure.value matches 1 run function norse_adventure:ships/common/assemble
-function norse_adventure:ships/common/assemble
+execute if score #assemble norse_adventure.value matches 1 run function norse_adventure:ships/common/assemble
 
 # Gravity
 execute if block ~ ~-2 ~ #norse_adventure:fallable run tp ~ ~-1 ~
