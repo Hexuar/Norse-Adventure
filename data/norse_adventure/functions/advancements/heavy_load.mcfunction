@@ -1,0 +1,6 @@
+execute store result score #chest_1 norse_adventure.value run data get entity @e[type=chest_minecart,tag=norse_adventure.ship.knarr.chest_1,distance=..10,sort=nearest,limit=1] Items
+execute store result score #chest_2 norse_adventure.value run data get entity @e[type=chest_minecart,tag=norse_adventure.ship.knarr.chest_2,distance=..10,sort=nearest,limit=1] Items
+execute store result score #chest_3 norse_adventure.value run data get entity @e[type=chest_minecart,tag=norse_adventure.ship.knarr.chest_3,distance=..10,sort=nearest,limit=1] Items
+execute store result score #chest_4 norse_adventure.value run data get entity @e[type=chest_minecart,tag=norse_adventure.ship.knarr.chest_4,distance=..10,sort=nearest,limit=1] Items
+
+execute if score #chest_1 norse_adventure.value matches 27 if score #chest_2 norse_adventure.value matches 27 if score #chest_3 norse_adventure.value matches 27 if score #chest_4 norse_adventure.value matches 27 run advancement grant @s only norse_adventure:tutorial/heavy_load

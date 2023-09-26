@@ -14,7 +14,7 @@
     "show_toast": true,
     "announce_to_chat": true,
     "hidden": false,
-    "frame": "goal"
+    "frame": "challenge"
   },
   "criteria": {
     "requirement": {

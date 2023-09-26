@@ -1,0 +1,75 @@
+{
+  "parent": "norse_adventure:tutorial/karve",
+  "display": {
+    "icon": {
+      "item": "minecraft:cod"
+    },
+    "title": {
+      "translate": "advancements.norse_adventure.tutorial.cod_wars.title"
+    },
+    "description": {
+      "translate": "advancements.norse_adventure.tutorial.cod_wars.description"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "steering_seat": {
+      "trigger": "minecraft:fishing_rod_hooked",
+      "conditions": {
+        "player": {
+          "vehicle": {
+            "type": "minecraft:pig",
+            "nbt": "{Tags:[\"norse_adventure.ship.karve.steering_seat\"]}"
+          }
+        },
+        "item": {
+          "items": [
+            "minecraft:cod"
+          ]
+        }
+      }
+    },
+    "port_seat": {
+      "trigger": "minecraft:fishing_rod_hooked",
+      "conditions": {
+        "player": {
+          "vehicle": {
+            "type": "minecraft:pig",
+            "nbt": "{Tags:[\"norse_adventure.ship.karve.port_seat\"]}"
+          }
+        },
+        "item": {
+          "items": [
+            "minecraft:cod"
+          ]
+        }
+      }
+    },
+    "starboard_seat": {
+      "trigger": "minecraft:fishing_rod_hooked",
+      "conditions": {
+        "player": {
+          "vehicle": {
+            "type": "minecraft:pig",
+            "nbt": "{Tags:[\"norse_adventure.ship.karve.starboard_seat\"]}"
+          }
+        },
+        "item": {
+          "items": [
+            "minecraft:cod"
+          ]
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "steering_seat",
+      "port_seat",
+      "starboard_seat"
+    ]
+  ]
+}

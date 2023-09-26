@@ -24,20 +24,20 @@ summon area_effect_cloud ~ ~ ~ {Tags:["norse_adventure.entity","norse_adventure.
 
 # Chests
 function norse_adventure:ships/common/chest/summon
-execute as @e[type=area_effect_cloud,tag=norse_adventure.untagged] run tag @s add norse_adventure.ship.knarr.chest_1
-execute as @e[type=area_effect_cloud,tag=norse_adventure.untagged] run tag @s remove norse_adventure.untagged
+execute as @e[type=#norse_adventure:crate_entity,tag=norse_adventure.untagged] run tag @s add norse_adventure.ship.knarr.chest_1
+execute as @e[type=#norse_adventure:crate_entity,tag=norse_adventure.untagged] run tag @s remove norse_adventure.untagged
 
 function norse_adventure:ships/common/chest/summon
-execute as @e[type=area_effect_cloud,tag=norse_adventure.untagged] run tag @s add norse_adventure.ship.knarr.chest_2
-execute as @e[type=area_effect_cloud,tag=norse_adventure.untagged] run tag @s remove norse_adventure.untagged
+execute as @e[type=#norse_adventure:crate_entity,tag=norse_adventure.untagged] run tag @s add norse_adventure.ship.knarr.chest_2
+execute as @e[type=#norse_adventure:crate_entity,tag=norse_adventure.untagged] run tag @s remove norse_adventure.untagged
 
 function norse_adventure:ships/common/chest/summon
-execute as @e[type=area_effect_cloud,tag=norse_adventure.untagged] run tag @s add norse_adventure.ship.knarr.chest_3
-execute as @e[type=area_effect_cloud,tag=norse_adventure.untagged] run tag @s remove norse_adventure.untagged
+execute as @e[type=#norse_adventure:crate_entity,tag=norse_adventure.untagged] run tag @s add norse_adventure.ship.knarr.chest_3
+execute as @e[type=#norse_adventure:crate_entity,tag=norse_adventure.untagged] run tag @s remove norse_adventure.untagged
 
 function norse_adventure:ships/common/chest/summon
-execute as @e[type=area_effect_cloud,tag=norse_adventure.untagged] run tag @s add norse_adventure.ship.knarr.chest_4
-execute as @e[type=area_effect_cloud,tag=norse_adventure.untagged] run tag @s remove norse_adventure.untagged
+execute as @e[type=#norse_adventure:crate_entity,tag=norse_adventure.untagged] run tag @s add norse_adventure.ship.knarr.chest_4
+execute as @e[type=#norse_adventure:crate_entity,tag=norse_adventure.untagged] run tag @s remove norse_adventure.untagged
 
 
 
