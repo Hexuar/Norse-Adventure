@@ -5,4 +5,6 @@ kill @e[type=item,nbt={Item:{id:"minecraft:oak_planks",Count:64b}},distance=..1,
 
 loot spawn ~ ~ ~ loot norse_adventure:ships/skeid
 
+advancement grant @p[distance=..10] only norse_adventure:tutorial/skeid
+
 playsound block.anvil.use player @a ~ ~ ~ 1 0.9
