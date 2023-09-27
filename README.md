@@ -6,6 +6,9 @@ Go viking in Minecraft!
 <details>
   <summary>Ship Types</summary>
   <IMG src="https://github.com/Hexuar/Norse-Adventure/assets/97542759/9e7600e0-685e-4d19-bbde-3246fef35a17"  alt="karve"/>
+  karve
   <IMG src="https://github.com/Hexuar/Norse-Adventure/assets/97542759/592aa67f-c966-4038-b435-0626ec7a8e84"  alt="knarr"/>
+  knarr
   <IMG src="https://github.com/Hexuar/Norse-Adventure/assets/97542759/f7b1dc90-6281-40a0-96f8-b212f47a57fd"  alt="skeid"/>
+  skeid
 </details>
