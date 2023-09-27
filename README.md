@@ -5,8 +5,7 @@ Go viking in Minecraft!
 ![2023-09-27_19 59 18](https://github.com/Hexuar/Norse-Adventure/assets/97542759/d6948eb1-d5e5-4f23-a65c-23595c07c781)
 <details>
   <summary>Ship Types</summary>
-  <IMG src="[blob:https://dev.azure.com/...](https://github.com/Hexuar/Norse-Adventure/assets/97542759/9e7600e0-685e-4d19-bbde-3246fef35a17)"  alt="karve"/>
-  ![karve](https://github.com/Hexuar/Norse-Adventure/assets/97542759/9e7600e0-685e-4d19-bbde-3246fef35a17)
-  ![knarr](https://github.com/Hexuar/Norse-Adventure/assets/97542759/592aa67f-c966-4038-b435-0626ec7a8e84)
-  ![skeid](https://github.com/Hexuar/Norse-Adventure/assets/97542759/f7b1dc90-6281-40a0-96f8-b212f47a57fd)
+  <IMG src="https://github.com/Hexuar/Norse-Adventure/assets/97542759/9e7600e0-685e-4d19-bbde-3246fef35a17"  alt="karve"/>
+  <IMG src="https://github.com/Hexuar/Norse-Adventure/assets/97542759/592aa67f-c966-4038-b435-0626ec7a8e84"  alt="knarr"/>
+  <IMG src="https://github.com/Hexuar/Norse-Adventure/assets/97542759/f7b1dc90-6281-40a0-96f8-b212f47a57fd"  alt="skeid"/>
 </details>
