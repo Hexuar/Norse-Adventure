@@ -20,7 +20,7 @@ tp @e[type=marker,tag=norse_adventure.current,tag=norse_adventure.ship.skeid.col
 
 
 # Rudder
-tp @e[type=area_effect_cloud,tag=norse_adventure.current,tag=norse_adventure.ship_part.rudder] ^-1.6 ^0.9 ^-7.5 ~ ~
+tp @e[type=area_effect_cloud,tag=norse_adventure.current,tag=norse_adventure.ship_part.rudder] ^-1.6 ^1.15 ^-7.5 ~ ~
 
 execute store result score #rudder_rotation norse_adventure.value run data get entity @e[type=area_effect_cloud,tag=norse_adventure.current,tag=norse_adventure.ship.skeid,sort=nearest,limit=1] Rotation[0] 1000
 scoreboard players operation #dr norse_adventure.value = @s norse_adventure.rotation
@@ -29,7 +29,7 @@ scoreboard players operation #rudder_rotation norse_adventure.value -= #dr norse
 execute store result entity @e[type=item_display,tag=norse_adventure.current,tag=norse_adventure.ship_part.rudder,limit=1] Rotation[0] float 0.001 run scoreboard players get #rudder_rotation norse_adventure.value
 
 # Sail interaction
-tp @e[type=area_effect_cloud,tag=norse_adventure.current,tag=norse_adventure.ship_part.sail_rope] ^1.35 ^0.625 ^-7.4
+tp @e[type=area_effect_cloud,tag=norse_adventure.current,tag=norse_adventure.ship_part.sail_rope] ^1.45 ^0.875 ^-7.4
 
 
 # Seats
