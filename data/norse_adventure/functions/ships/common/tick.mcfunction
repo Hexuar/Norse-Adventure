@@ -45,7 +45,7 @@ function norse_adventure:ships/common/move with storage norse_adventure:data mov
 
 
 # Floors
-execute as @e[type=marker,tag=norse_adventure.ship_part.floor] at @s run function norse_adventure:ships/common/floor/tick
+execute if score #floor_collision norse_adventure.value matches 1 as @e[type=marker,tag=norse_adventure.ship_part.floor] at @s run function norse_adventure:ships/common/floor/tick
 
 
 # Assemble
