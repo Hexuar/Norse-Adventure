@@ -15,8 +15,17 @@
               }
             },
             {
-              "function": "minecraft:set_nbt",
-              "tag": "{CustomModelData:2221500,EntityTag:{id:\"minecraft:marker\",Tags:[\"norse_adventure.entity\",\"norse_adventure.spawn\",\"norse_adventure.spawn.karve\"]}}"
+              "function": "minecraft:set_custom_model_data",
+              "value": 2221500
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:entity_data": {
+                  "id": "minecraft:marker",
+                  "Tags": ["norse_adventure.entity","norse_adventure.spawn","norse_adventure.spawn.karve"]
+                }
+              }
             }
           ]
         }
