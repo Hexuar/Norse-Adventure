@@ -1,24 +1,23 @@
 {
-    "display": {
-      "icon": {
-        "item": "minecraft:crafting_table"
-      },
-      "title": {
-        "translate": "advancements.norse_adventure.recipes.root.title"
-      },
-      "description": {
-        "translate": "advancements.norse_adventure.recipes.root.description"
-      },
-      "background": "minecraft:textures/block/oak_planks.png",
-      "show_toast": false,
-      "announce_to_chat": false,
-      "hidden": false,
-      "frame": "goal"
+  "display": {
+    "icon": {
+      "id": "minecraft:crafting_table"
     },
-    "criteria": {
-      "requirement": {
-        "trigger": "minecraft:tick"
-      }
+    "title": {
+      "translate": "advancements.norse_adventure.recipes.root.title"
+    },
+    "description": {
+      "translate": "advancements.norse_adventure.recipes.root.description"
+    },
+    "background": "minecraft:textures/block/oak_planks.png",
+    "frame": "goal",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:tick"
     }
   }
-  
+}

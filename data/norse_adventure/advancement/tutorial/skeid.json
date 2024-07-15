@@ -2,8 +2,10 @@
   "parent": "norse_adventure:tutorial/root",
   "display": {
     "icon": {
-      "item": "minecraft:bat_spawn_egg",
-      "nbt": "{CustomModelData:2221502}"
+      "id": "minecraft:bat_spawn_egg",
+      "components": {
+        "minecraft:custom_model_data": 2221502
+      }
     },
     "title": {
       "translate": "advancements.norse_adventure.tutorial.skeid.title"

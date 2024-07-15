@@ -2,7 +2,7 @@
   "parent": "norse_adventure:tutorial/knarr",
   "display": {
     "icon": {
-      "item": "minecraft:iron_block"
+      "id": "minecraft:iron_block"
     },
     "title": {
       "translate": "advancements.norse_adventure.tutorial.heavy_load.title"

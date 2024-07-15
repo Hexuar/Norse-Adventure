@@ -1,9 +1,10 @@
 {
-  "parent": "norse_adventure:tutorial/root",
   "display": {
     "icon": {
-      "item": "minecraft:bat_spawn_egg",
-      "nbt": "{CustomModelData:2221500}"
+      "id": "minecraft:bat_spawn_egg",
+      "components": {
+        "minecraft:custom_model_data": 2221500
+      }
     },
     "title": {
       "translate": "advancements.norse_adventure.tutorial.karve.title"
@@ -11,11 +12,12 @@
     "description": {
       "translate": "advancements.norse_adventure.tutorial.karve.description"
     },
+    "frame": "task",
     "show_toast": true,
     "announce_to_chat": true,
-    "hidden": false,
-    "frame": "task"
+    "hidden": false
   },
+  "parent": "norse_adventure:tutorial/root",
   "criteria": {
     "requirement": {
       "trigger": "minecraft:impossible"

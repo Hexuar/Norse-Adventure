@@ -2,7 +2,7 @@
   "parent": "norse_adventure:tutorial/karve",
   "display": {
     "icon": {
-      "item": "minecraft:iron_axe"
+      "id": "minecraft:iron_axe"
     },
     "title": {
       "translate": "advancements.norse_adventure.tutorial.destruction.title"

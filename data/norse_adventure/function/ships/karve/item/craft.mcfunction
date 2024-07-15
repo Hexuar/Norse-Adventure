@@ -1,7 +1,7 @@
 kill @s
-kill @e[type=item,nbt={Item:{id:"minecraft:white_wool",Count:8b}},distance=..1,sort=nearest,limit=1]
-kill @e[type=item,nbt={Item:{id:"minecraft:oak_log",Count:8b}},distance=..1,sort=nearest,limit=1]
-kill @e[type=item,nbt={Item:{id:"minecraft:oak_planks",Count:32b}},distance=..1,sort=nearest,limit=1]
+kill @e[type=item,nbt={Item:{id:"minecraft:white_wool",count:8}},distance=..1,sort=nearest,limit=1]
+kill @e[type=item,nbt={Item:{id:"minecraft:oak_log",count:8}},distance=..1,sort=nearest,limit=1]
+kill @e[type=item,nbt={Item:{id:"minecraft:oak_planks",count:32}},distance=..1,sort=nearest,limit=1]
 
 loot spawn ~ ~ ~ loot norse_adventure:ships/karve
 

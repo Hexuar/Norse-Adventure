@@ -2,8 +2,10 @@
   "parent": "norse_adventure:tutorial/steering_seat",
   "display": {
     "icon": {
-      "item": "minecraft:command_block",
-      "nbt": "{CustomModelData:2221503}"
+      "id": "minecraft:command_block",
+      "components": {
+        "minecraft:custom_model_data": 2221503
+      }
     },
     "title": {
       "translate": "advancements.norse_adventure.tutorial.sail.title"

@@ -1,24 +1,25 @@
 {
-    "display": {
-      "icon": {
-        "item": "minecraft:bat_spawn_egg",
-        "nbt": "{CustomModelData:2221500}"
-      },
-      "title": {
-        "translate": "advancements.norse_adventure.recipes.karve.title"
-      },
-      "description": {
-        "translate": "advancements.norse_adventure.recipes.karve.description"
-      },
-      "show_toast": false,
-      "announce_to_chat": false,
-      "hidden": false
-    },
-    "parent": "norse_adventure:recipes/root",
-    "criteria": {
-      "requirement": {
-        "trigger": "minecraft:tick"
+  "display": {
+    "icon": {
+      "id": "minecraft:bat_spawn_egg",
+      "components": {
+        "minecraft:custom_model_data": 2221500
       }
+    },
+    "title": {
+      "translate": "advancements.norse_adventure.recipes.karve.title"
+    },
+    "description": {
+      "translate": "advancements.norse_adventure.recipes.karve.description"
+    },
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "parent": "norse_adventure:recipes/root",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:tick"
     }
   }
-  
+}
