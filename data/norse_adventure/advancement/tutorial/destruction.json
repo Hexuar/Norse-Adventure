@@ -1,0 +1,29 @@
+{
+  "parent": "norse_adventure:tutorial/karve",
+  "display": {
+    "icon": {
+      "item": "minecraft:iron_axe"
+    },
+    "title": {
+      "translate": "advancements.norse_adventure.tutorial.destruction.title"
+    },
+    "description": {
+      "translate": "advancements.norse_adventure.tutorial.destruction.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "entity": {
+          "type": "villager",
+          "nbt": "{Tags:[\"norse_adventure.ship_part.hitbox\"]}"
+        }
+      }
+    }
+  }
+}

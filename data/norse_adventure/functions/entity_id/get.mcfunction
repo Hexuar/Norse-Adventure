@@ -1,2 +1,0 @@
-scoreboard players operation #current norse_adventure.entityID = @s norse_adventure.entityID
-execute as @e[type=#norse_adventure:ship_entities,tag=norse_adventure.entity] if score @s norse_adventure.entityID = #current norse_adventure.entityID run tag @s add norse_adventure.current

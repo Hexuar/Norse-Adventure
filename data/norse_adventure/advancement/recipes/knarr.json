@@ -1,0 +1,24 @@
+{
+    "display": {
+      "icon": {
+        "item": "minecraft:bat_spawn_egg",
+        "nbt": "{CustomModelData:2221501}"
+      },
+      "title": {
+        "translate": "advancements.norse_adventure.recipes.knarr.title"
+      },
+      "description": {
+        "translate": "advancements.norse_adventure.recipes.knarr.description"
+      },
+      "show_toast": false,
+      "announce_to_chat": false,
+      "hidden": false
+    },
+    "parent": "norse_adventure:recipes/root",
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:tick"
+      }
+    }
+  }
+  

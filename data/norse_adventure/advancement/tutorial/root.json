@@ -1,0 +1,25 @@
+{
+    "display": {
+      "icon": {
+        "item": "minecraft:bat_spawn_egg",
+        "nbt": "{CustomModelData:2221500}"
+      },
+      "title": {
+        "translate": "advancements.norse_adventure.tutorial.root.title"
+      },
+      "description": {
+        "translate": "advancements.norse_adventure.tutorial.root.description"
+      },
+      "background": "minecraft:textures/block/oak_planks.png",
+      "show_toast": false,
+      "announce_to_chat": false,
+      "hidden": false,
+      "frame": "task"
+    },
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:tick"
+      }
+    }
+  }
+  

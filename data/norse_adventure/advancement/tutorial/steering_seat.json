@@ -1,0 +1,32 @@
+{
+  "parent": "norse_adventure:tutorial/root",
+  "display": {
+    "icon": {
+      "item": "minecraft:command_block",
+      "nbt": "{CustomModelData:2221500}"
+    },
+    "title": {
+      "translate": "advancements.norse_adventure.tutorial.steering_seat.title"
+    },
+    "description": {
+      "translate": "advancements.norse_adventure.tutorial.steering_seat.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:started_riding",
+      "conditions": {
+        "player": {
+          "vehicle": {
+            "type": "pig",
+            "nbt": "{Tags:[\"norse_adventure.ship_part.steering_seat\"]}"
+          }
+        }
+      }
+    }
+  }
+}

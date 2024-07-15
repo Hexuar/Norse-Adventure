@@ -1,0 +1,4 @@
+execute store result score #collision_bow norse_adventure.value if entity @s[tag=norse_adventure.ship_part.collision_detector.bow] unless block ~ ~ ~ #norse_adventure:passable
+execute store result score #collision_aft norse_adventure.value if entity @s[tag=norse_adventure.ship_part.collision_detector.aft] unless block ~ ~ ~ #norse_adventure:passable
+execute store result score #collision_starboard norse_adventure.value if entity @s[tag=norse_adventure.ship_part.collision_detector.starboard] unless block ~ ~ ~ #norse_adventure:passable
+execute store result score #collision_port norse_adventure.value if entity @s[tag=norse_adventure.ship_part.collision_detector.port] unless block ~ ~ ~ #norse_adventure:passable

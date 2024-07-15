@@ -1,0 +1,7 @@
+{
+    "values": [
+        "norse_adventure:ships/karve/load_data",
+        "norse_adventure:ships/knarr/load_data",
+        "norse_adventure:ships/skeid/load_data"
+    ]
+}
