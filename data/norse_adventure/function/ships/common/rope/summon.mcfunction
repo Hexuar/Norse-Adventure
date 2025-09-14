@@ -11,5 +11,5 @@ execute as @e[type=bat,tag=norse_adventure.ship_part.rope.anchor_point,tag=norse
 
 
 ## Add Leash
-data modify entity @e[tag=norse_adventure.ship_part.rope.anchor_point.a,tag=norse_adventure.unleashed,sort=nearest,limit=1] Leash.UUID set from entity @e[tag=norse_adventure.ship_part.rope.anchor_point.b,tag=norse_adventure.unleashed,sort=nearest,limit=1] UUID
+data modify entity @e[tag=norse_adventure.ship_part.rope.anchor_point.a,tag=norse_adventure.unleashed,sort=nearest,limit=1] leash.UUID set from entity @e[tag=norse_adventure.ship_part.rope.anchor_point.b,tag=norse_adventure.unleashed,sort=nearest,limit=1] UUID
 tag @e[type=bat,tag=norse_adventure.unleashed] remove norse_adventure.unleashed

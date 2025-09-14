@@ -8,19 +8,12 @@
           "name": "minecraft:bat_spawn_egg",
           "functions": [
             {
-              "function": "minecraft:set_name",
-              "name": {
-                "translate": "item.norse_adventure.karve",
-                "italic": false
-              }
-            },
-            {
-              "function": "minecraft:set_custom_model_data",
-              "value": 2221500
-            },
-            {
               "function": "minecraft:set_components",
               "components": {
+                "item_name": {
+                  "translate": "item.norse_adventure.karve"
+                },
+                "item_model": "norse_adventure:karve",
                 "minecraft:entity_data": {
                   "id": "minecraft:marker",
                   "Tags": ["norse_adventure.entity","norse_adventure.spawn","norse_adventure.spawn.karve"]
