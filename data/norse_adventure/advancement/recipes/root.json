@@ -9,7 +9,7 @@
     "description": {
       "translate": "advancements.norse_adventure.recipes.root.description"
     },
-    "background": "minecraft:textures/block/oak_planks.png",
+    "background": "minecraft:block/oak_planks",
     "frame": "goal",
     "show_toast": false,
     "announce_to_chat": false,

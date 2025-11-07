@@ -11,20 +11,22 @@ execute store result entity @s item.components."minecraft:custom_model_data".flo
 # Sail interaction
 tp @e[type=area_effect_cloud,tag=norse_adventure.current,tag=norse_adventure.ship_part.sail_rope] ^1.2 ^0.63 ^-3.1
 
+
 # Seats
 tp @e[type=area_effect_cloud,tag=norse_adventure.current,tag=norse_adventure.ship_part.seat,tag=norse_adventure.ship.karve.steering_seat] ^ ^-0.225 ^-3.5
 tp @e[type=area_effect_cloud,tag=norse_adventure.current,tag=norse_adventure.ship_part.seat,tag=norse_adventure.ship.karve.port_seat] ^0.5 ^-0.225 ^2.5
 tp @e[type=area_effect_cloud,tag=norse_adventure.current,tag=norse_adventure.ship_part.seat,tag=norse_adventure.ship.karve.starboard_seat] ^-0.5 ^-0.225 ^2.5
 
 
-# Chest
-tp @e[type=area_effect_cloud,tag=norse_adventure.current,tag=norse_adventure.ship.karve.chest] ^ ^-0.85 ^-0.4
+# Chests
+tp @e[type=area_effect_cloud,tag=norse_adventure.current,tag=norse_adventure.ship.karve.chest] ^ ^-0.85 ^-0.4 ~ ~
 
 
 # Sail
 execute if score @s norse_adventure.speed matches ..2 run function norse_adventure:ships/karve/sail/tucked
 execute if score @s norse_adventure.speed matches 3..4 run function norse_adventure:ships/karve/sail/half
 execute if score @s norse_adventure.speed matches 5.. run function norse_adventure:ships/karve/sail/full
+
 
 # Area effect clouds
 execute as @e[type=#norse_adventure:fix_rotation,tag=norse_adventure.current,tag=!norse_adventure.ship_part.rudder] run data modify entity @s Rotation set from entity @e[type=area_effect_cloud,tag=norse_adventure.current,tag=norse_adventure.ship.karve,sort=nearest,limit=1] Rotation

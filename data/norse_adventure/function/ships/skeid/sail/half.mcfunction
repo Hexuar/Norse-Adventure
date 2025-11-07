@@ -1,4 +1,5 @@
-data modify entity @e[type=item_display,tag=norse_adventure.current,tag=norse_adventure.ship_part.sail,sort=nearest,limit=1] item.components."minecraft:custom_model_data" set value 2221522
+data modify entity @s item.components."minecraft:custom_model_data".floats[0] set value 0.1f
+
 
 ## Ropes
 

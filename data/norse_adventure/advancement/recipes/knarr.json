@@ -1,9 +1,9 @@
 {
   "display": {
     "icon": {
-      "id": "minecraft:bat_spawn_egg",
+      "id": "minecraft:command_block",
       "components": {
-        "minecraft:custom_model_data": 2221501
+        "minecraft:item_model": "norse_adventure:knarr"
       }
     },
     "title": {

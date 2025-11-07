@@ -8,19 +8,12 @@
           "name": "minecraft:bat_spawn_egg",
           "functions": [
             {
-              "function": "minecraft:set_name",
-              "name": {
-                "translate": "item.norse_adventure.skeid",
-                "italic": false
-              }
-            },
-            {
-              "function": "minecraft:set_custom_model_data",
-              "value": 2221502
-            },
-            {
               "function": "minecraft:set_components",
               "components": {
+                "item_name": {
+                  "translate": "item.norse_adventure.skeid"
+                },
+                "item_model": "norse_adventure:skeid",
                 "minecraft:entity_data": {
                   "id": "minecraft:marker",
                   "Tags": ["norse_adventure.entity","norse_adventure.spawn","norse_adventure.spawn.skeid"]
