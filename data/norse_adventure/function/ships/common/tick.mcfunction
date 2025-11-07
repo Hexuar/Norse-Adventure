@@ -43,11 +43,6 @@ execute store result storage norse_adventure:data move.rotation float 0.1 run sc
 function norse_adventure:ships/common/move with storage norse_adventure:data move
 
 
-
-# Floors
-execute if score #floor_collision norse_adventure.value matches 1 as @e[type=marker,tag=norse_adventure.ship_part.floor] at @s run function norse_adventure:ships/common/floor/tick
-
-
 # Assemble
 execute unless score @s norse_adventure.speed matches 0 run scoreboard players set #assemble norse_adventure.value 1
 execute unless score @s norse_adventure.rotation matches 0 run scoreboard players set #assemble norse_adventure.value 1
