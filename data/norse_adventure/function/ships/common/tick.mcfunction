@@ -6,7 +6,7 @@ function norse_adventure:entity_id/get
 # Destroy
 scoreboard players set #destroy norse_adventure.value 1
 execute on passengers if entity @s[type=villager,tag=norse_adventure.ship_part.hitbox] run scoreboard players set #destroy norse_adventure.value 0
-execute if score #destroy norse_adventure.value matches 1 run function norse_adventure:ships/common/destroy
+execute if score #destroy norse_adventure.value matches 1 unless entity @s[tag=norse_adventure.kill_me] run function norse_adventure:ships/common/destroy
 
 
 # Seat fix

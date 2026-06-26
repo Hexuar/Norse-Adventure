@@ -1,5 +1,6 @@
-kill @e[tag=norse_adventure.entity]
-kill @e[type=item,nbt={Item:{id:"minecraft:saddle"}}]
+execute as @e[type=item_display,tag=norse_adventure.ship] at @s run function norse_adventure:ships/common/destroy
+
+kill @e[tag=norse_adventure.entity,tag=!norse_adventure.kill_me]
 
 scoreboard objectives remove norse_adventure.value
 scoreboard objectives remove norse_adventure.constant
