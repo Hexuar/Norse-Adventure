@@ -20,9 +20,12 @@
       "trigger": "minecraft:fishing_rod_hooked",
       "conditions": {
         "player": {
-          "vehicle": {
-            "type": "minecraft:pig",
-            "nbt": "{Tags:[\"norse_adventure.ship.karve.steering_seat\"]}"
+          "minecraft:vehicle": {
+            "minecraft:entity_tags": {
+              "any_of": [
+                "norse_adventure.ship.karve.steering_seat"
+              ]
+            }
           }
         },
         "item": {
@@ -36,9 +39,12 @@
       "trigger": "minecraft:fishing_rod_hooked",
       "conditions": {
         "player": {
-          "vehicle": {
-            "type": "minecraft:pig",
-            "nbt": "{Tags:[\"norse_adventure.ship.karve.port_seat\"]}"
+          "minecraft:vehicle": {
+            "minecraft:entity_tags": {
+              "any_of": [
+                "norse_adventure.ship.karve.port_seat"
+              ]
+            }
           }
         },
         "item": {
@@ -52,9 +58,12 @@
       "trigger": "minecraft:fishing_rod_hooked",
       "conditions": {
         "player": {
-          "vehicle": {
-            "type": "minecraft:pig",
-            "nbt": "{Tags:[\"norse_adventure.ship.karve.starboard_seat\"]}"
+          "minecraft:vehicle": {
+            "minecraft:entity_tags": {
+              "any_of": [
+                "norse_adventure.ship.karve.starboard_seat"
+              ]
+            }
           }
         },
         "item": {

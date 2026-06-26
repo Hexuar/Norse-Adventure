@@ -23,9 +23,12 @@
       "trigger": "minecraft:started_riding",
       "conditions": {
         "player": {
-          "vehicle": {
-            "type": "pig",
-            "nbt": "{Tags:[\"norse_adventure.ship_part.steering_seat\"]}"
+          "minecraft:vehicle": {
+            "minecraft:entity_tags": {
+              "any_of": [
+                "norse_adventure.ship_part.steering_seat"
+              ]
+            }
           }
         }
       }
