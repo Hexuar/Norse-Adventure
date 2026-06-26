@@ -1,31 +1,38 @@
 # Collision Detectors
-tp @e[type=marker,tag=norse_adventure.current,tag=norse_adventure.ship.karve.collision_detector.bow] ^ ^ ^5
-tp @e[type=marker,tag=norse_adventure.current,tag=norse_adventure.ship.karve.collision_detector.aft] ^ ^ ^-5
+tp @n[type=marker,tag=norse_adventure.current,tag=norse_adventure.ship.karve.collision_detector.bow] ^ ^ ^5
+tp @n[type=marker,tag=norse_adventure.current,tag=norse_adventure.ship.karve.collision_detector.aft] ^ ^ ^-5
 
 
 # Rudder
-tp @e[type=area_effect_cloud,tag=norse_adventure.current,tag=norse_adventure.ship_part.rudder] ^-1.28 ^0.63 ^-3 ~ ~
+tp @n[type=area_effect_cloud,tag=norse_adventure.current,tag=norse_adventure.ship_part.rudder] ^-1.28 ^0.63 ^-3 ~ ~
 execute store result entity @s item.components."minecraft:custom_model_data".floats[1] float 1.0 run scoreboard players get @s norse_adventure.rotation
 
 
 # Sail interaction
-tp @e[type=area_effect_cloud,tag=norse_adventure.current,tag=norse_adventure.ship_part.sail_rope] ^1.2 ^0.63 ^-3.1
+tp @n[type=area_effect_cloud,tag=norse_adventure.current,tag=norse_adventure.ship_part.sail_rope] ^1.2 ^0.63 ^-3.1
 
 
 # Seats
-tp @e[type=area_effect_cloud,tag=norse_adventure.current,tag=norse_adventure.ship_part.seat,tag=norse_adventure.ship.karve.steering_seat] ^ ^-0.225 ^-3.5
-tp @e[type=area_effect_cloud,tag=norse_adventure.current,tag=norse_adventure.ship_part.seat,tag=norse_adventure.ship.karve.port_seat] ^0.5 ^-0.225 ^2.5
-tp @e[type=area_effect_cloud,tag=norse_adventure.current,tag=norse_adventure.ship_part.seat,tag=norse_adventure.ship.karve.starboard_seat] ^-0.5 ^-0.225 ^2.5
+tp @n[type=area_effect_cloud,tag=norse_adventure.current,tag=norse_adventure.ship_part.seat,tag=norse_adventure.ship.karve.steering_seat] ^ ^-0.225 ^-3.5
+tp @n[type=area_effect_cloud,tag=norse_adventure.current,tag=norse_adventure.ship_part.seat,tag=norse_adventure.ship.karve.port_seat] ^0.5 ^-0.225 ^2.5
+tp @n[type=area_effect_cloud,tag=norse_adventure.current,tag=norse_adventure.ship_part.seat,tag=norse_adventure.ship.karve.starboard_seat] ^-0.5 ^-0.225 ^2.5
 
 
 # Chests
-tp @e[type=area_effect_cloud,tag=norse_adventure.current,tag=norse_adventure.ship.karve.chest] ^ ^-0.85 ^-0.4 ~ ~
+tp @n[type=area_effect_cloud,tag=norse_adventure.current,tag=norse_adventure.ship.karve.chest] ^ ^-0.85 ^-0.4 ~ ~
 
 
 # Sail
 execute if score @s norse_adventure.speed matches ..2 run function norse_adventure:ships/karve/sail/tucked
 execute if score @s norse_adventure.speed matches 3..4 run function norse_adventure:ships/karve/sail/half
 execute if score @s norse_adventure.speed matches 5.. run function norse_adventure:ships/karve/sail/full
+
+
+# Floors
+tp @n[type=happy_ghast,tag=norse_adventure.current,tag=norse_adventure.ship_part.floor,tag=norse_adventure.ship.karve.floor1] ^ ^-2.55 ^3.5
+tp @n[type=happy_ghast,tag=norse_adventure.current,tag=norse_adventure.ship_part.floor,tag=norse_adventure.ship.karve.floor2] ^ ^-2.55 ^1
+tp @n[type=happy_ghast,tag=norse_adventure.current,tag=norse_adventure.ship_part.floor,tag=norse_adventure.ship.karve.floor3] ^ ^-2.55 ^-1.5
+tp @n[type=happy_ghast,tag=norse_adventure.current,tag=norse_adventure.ship_part.floor,tag=norse_adventure.ship.karve.floor4] ^ ^-2.55 ^-4
 
 
 # Area effect clouds

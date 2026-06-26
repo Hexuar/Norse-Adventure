@@ -81,5 +81,32 @@ execute as @e[tag=norse_adventure.ship_part.seat,tag=norse_adventure.untagged] r
 execute as @e[tag=norse_adventure.ship_part.seat,tag=norse_adventure.untagged] run tag @s remove norse_adventure.untagged
 
 
+## Floors
+
+# Floor 1
+function norse_adventure:ships/common/floor/summon
+attribute @n[type=happy_ghast,tag=norse_adventure.ship_part.floor,tag=norse_adventure.untagged] minecraft:scale base set 0.7
+execute as @e[tag=norse_adventure.ship_part.floor,tag=norse_adventure.untagged] run tag @s add norse_adventure.ship.karve.floor1
+execute as @e[tag=norse_adventure.ship_part.floor,tag=norse_adventure.untagged] run tag @s remove norse_adventure.untagged
+
+# Floor 2
+function norse_adventure:ships/common/floor/summon
+attribute @n[type=happy_ghast,tag=norse_adventure.ship_part.floor,tag=norse_adventure.untagged] minecraft:scale base set 0.7
+execute as @e[tag=norse_adventure.ship_part.floor,tag=norse_adventure.untagged] run tag @s add norse_adventure.ship.karve.floor2
+execute as @e[tag=norse_adventure.ship_part.floor,tag=norse_adventure.untagged] run tag @s remove norse_adventure.untagged
+
+# Floor 3
+function norse_adventure:ships/common/floor/summon
+attribute @n[type=happy_ghast,tag=norse_adventure.ship_part.floor,tag=norse_adventure.untagged] minecraft:scale base set 0.7
+execute as @e[tag=norse_adventure.ship_part.floor,tag=norse_adventure.untagged] run tag @s add norse_adventure.ship.karve.floor3
+execute as @e[tag=norse_adventure.ship_part.floor,tag=norse_adventure.untagged] run tag @s remove norse_adventure.untagged
+
+# Floor 4
+function norse_adventure:ships/common/floor/summon
+attribute @n[type=happy_ghast,tag=norse_adventure.ship_part.floor,tag=norse_adventure.untagged] minecraft:scale base set 0.7
+execute as @e[tag=norse_adventure.ship_part.floor,tag=norse_adventure.untagged] run tag @s add norse_adventure.ship.karve.floor4
+execute as @e[tag=norse_adventure.ship_part.floor,tag=norse_adventure.untagged] run tag @s remove norse_adventure.untagged
+
+
 # Common
 function norse_adventure:ships/common/summon

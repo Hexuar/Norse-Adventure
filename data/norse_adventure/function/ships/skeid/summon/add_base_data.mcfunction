@@ -139,5 +139,50 @@ execute as @e[tag=norse_adventure.ship_part.seat,tag=norse_adventure.untagged] r
 execute as @e[tag=norse_adventure.ship_part.seat,tag=norse_adventure.untagged] run tag @s remove norse_adventure.untagged
 
 
+## Floors
+
+# Floor 1
+function norse_adventure:ships/common/floor/summon
+attribute @n[type=happy_ghast,tag=norse_adventure.ship_part.floor,tag=norse_adventure.untagged] minecraft:scale base set 0.8
+execute as @e[tag=norse_adventure.ship_part.floor,tag=norse_adventure.untagged] run tag @s add norse_adventure.ship.skeid.floor1
+execute as @e[tag=norse_adventure.ship_part.floor,tag=norse_adventure.untagged] run tag @s remove norse_adventure.untagged
+
+# Floor 2
+function norse_adventure:ships/common/floor/summon
+attribute @n[type=happy_ghast,tag=norse_adventure.ship_part.floor,tag=norse_adventure.untagged] minecraft:scale base set 0.8
+execute as @e[tag=norse_adventure.ship_part.floor,tag=norse_adventure.untagged] run tag @s add norse_adventure.ship.skeid.floor2
+execute as @e[tag=norse_adventure.ship_part.floor,tag=norse_adventure.untagged] run tag @s remove norse_adventure.untagged
+
+# Floor 3
+function norse_adventure:ships/common/floor/summon
+attribute @n[type=happy_ghast,tag=norse_adventure.ship_part.floor,tag=norse_adventure.untagged] minecraft:scale base set 0.8
+execute as @e[tag=norse_adventure.ship_part.floor,tag=norse_adventure.untagged] run tag @s add norse_adventure.ship.skeid.floor3
+execute as @e[tag=norse_adventure.ship_part.floor,tag=norse_adventure.untagged] run tag @s remove norse_adventure.untagged
+
+# Floor 4
+function norse_adventure:ships/common/floor/summon
+attribute @n[type=happy_ghast,tag=norse_adventure.ship_part.floor,tag=norse_adventure.untagged] minecraft:scale base set 0.8
+execute as @e[tag=norse_adventure.ship_part.floor,tag=norse_adventure.untagged] run tag @s add norse_adventure.ship.skeid.floor4
+execute as @e[tag=norse_adventure.ship_part.floor,tag=norse_adventure.untagged] run tag @s remove norse_adventure.untagged
+
+# Floor 5
+function norse_adventure:ships/common/floor/summon
+attribute @n[type=happy_ghast,tag=norse_adventure.ship_part.floor,tag=norse_adventure.untagged] minecraft:scale base set 0.8
+execute as @e[tag=norse_adventure.ship_part.floor,tag=norse_adventure.untagged] run tag @s add norse_adventure.ship.skeid.floor5
+execute as @e[tag=norse_adventure.ship_part.floor,tag=norse_adventure.untagged] run tag @s remove norse_adventure.untagged
+
+# Floor 6
+function norse_adventure:ships/common/floor/summon
+attribute @n[type=happy_ghast,tag=norse_adventure.ship_part.floor,tag=norse_adventure.untagged] minecraft:scale base set 0.8
+execute as @e[tag=norse_adventure.ship_part.floor,tag=norse_adventure.untagged] run tag @s add norse_adventure.ship.skeid.floor6
+execute as @e[tag=norse_adventure.ship_part.floor,tag=norse_adventure.untagged] run tag @s remove norse_adventure.untagged
+
+# Floor 7
+function norse_adventure:ships/common/floor/summon
+attribute @n[type=happy_ghast,tag=norse_adventure.ship_part.floor,tag=norse_adventure.untagged] minecraft:scale base set 0.8
+execute as @e[tag=norse_adventure.ship_part.floor,tag=norse_adventure.untagged] run tag @s add norse_adventure.ship.skeid.floor7
+execute as @e[tag=norse_adventure.ship_part.floor,tag=norse_adventure.untagged] run tag @s remove norse_adventure.untagged
+
+
 # Common
 function norse_adventure:ships/common/summon

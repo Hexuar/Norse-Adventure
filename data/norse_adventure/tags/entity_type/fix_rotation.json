@@ -1,7 +1,7 @@
 {
     "values": [
-        "item_display",
-        "chest_minecart",
-        "pig"
+        "minecraft:item_display",
+        "minecraft:chest_minecart",
+        "minecraft:pig"
     ]
 }

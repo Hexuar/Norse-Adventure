@@ -1,0 +1,1 @@
+summon minecraft:happy_ghast ~ ~ ~ {Tags:["norse_adventure.ship_part.floor","norse_adventure.entity","norse_adventure.unregistered","norse_adventure.untagged"],NoAI:1b,Invulnerable:1b,Silent:1b,active_effects:[{id:"minecraft:invisibility",duration:-1,show_particles:false}]}

@@ -1,37 +1,37 @@
 # Collision Detectors
-tp @e[type=marker,tag=norse_adventure.current,tag=norse_adventure.ship.skeid.collision_detector.bow_a] ^1 ^ ^9
-tp @e[type=marker,tag=norse_adventure.current,tag=norse_adventure.ship.skeid.collision_detector.aft_a] ^1 ^ ^-9
-tp @e[type=marker,tag=norse_adventure.current,tag=norse_adventure.ship.skeid.collision_detector.bow_b] ^-1 ^ ^9
-tp @e[type=marker,tag=norse_adventure.current,tag=norse_adventure.ship.skeid.collision_detector.aft_b] ^-1 ^ ^-9
+tp @n[type=marker,tag=norse_adventure.current,tag=norse_adventure.ship.skeid.collision_detector.bow_a] ^1 ^ ^9
+tp @n[type=marker,tag=norse_adventure.current,tag=norse_adventure.ship.skeid.collision_detector.aft_a] ^1 ^ ^-9
+tp @n[type=marker,tag=norse_adventure.current,tag=norse_adventure.ship.skeid.collision_detector.bow_b] ^-1 ^ ^9
+tp @n[type=marker,tag=norse_adventure.current,tag=norse_adventure.ship.skeid.collision_detector.aft_b] ^-1 ^ ^-9
 
 
 # Rudder
-tp @e[type=area_effect_cloud,tag=norse_adventure.current,tag=norse_adventure.ship_part.rudder] ^-1.6 ^0.875 ^-7.5 ~ ~
+tp @n[type=area_effect_cloud,tag=norse_adventure.current,tag=norse_adventure.ship_part.rudder] ^-1.6 ^0.875 ^-7.5 ~ ~
 execute store result entity @s item.components."minecraft:custom_model_data".floats[1] float 1.0 run scoreboard players get @s norse_adventure.rotation
 
 
 # Sail interaction
-tp @e[type=area_effect_cloud,tag=norse_adventure.current,tag=norse_adventure.ship_part.sail_rope] ^1.45 ^0.875 ^-7.4
+tp @n[type=area_effect_cloud,tag=norse_adventure.current,tag=norse_adventure.ship_part.sail_rope] ^1.45 ^0.875 ^-7.4
 
 
 # Seats
-tp @e[type=area_effect_cloud,tag=norse_adventure.current,tag=norse_adventure.ship_part.seat,tag=norse_adventure.ship.skeid.steering_seat] ^ ^0.03 ^-8
-tp @e[type=area_effect_cloud,tag=norse_adventure.current,tag=norse_adventure.ship_part.seat,tag=norse_adventure.ship.skeid.port_seat_1] ^1 ^-0.1 ^-5.55
-tp @e[type=area_effect_cloud,tag=norse_adventure.current,tag=norse_adventure.ship_part.seat,tag=norse_adventure.ship.skeid.starboard_seat_1] ^-1 ^-0.1 ^-5.55
-tp @e[type=area_effect_cloud,tag=norse_adventure.current,tag=norse_adventure.ship_part.seat,tag=norse_adventure.ship.skeid.port_seat_2] ^1 ^-0.1 ^-4
-tp @e[type=area_effect_cloud,tag=norse_adventure.current,tag=norse_adventure.ship_part.seat,tag=norse_adventure.ship.skeid.starboard_seat_2] ^-1 ^-0.1 ^-4
-tp @e[type=area_effect_cloud,tag=norse_adventure.current,tag=norse_adventure.ship_part.seat,tag=norse_adventure.ship.skeid.port_seat_3] ^1 ^-0.1 ^-2.6
-tp @e[type=area_effect_cloud,tag=norse_adventure.current,tag=norse_adventure.ship_part.seat,tag=norse_adventure.ship.skeid.starboard_seat_3] ^-1 ^-0.1 ^-2.6
-tp @e[type=area_effect_cloud,tag=norse_adventure.current,tag=norse_adventure.ship_part.seat,tag=norse_adventure.ship.skeid.port_seat_4] ^1 ^-0.1 ^2.6
-tp @e[type=area_effect_cloud,tag=norse_adventure.current,tag=norse_adventure.ship_part.seat,tag=norse_adventure.ship.skeid.starboard_seat_4] ^-1 ^-0.1 ^2.6
-tp @e[type=area_effect_cloud,tag=norse_adventure.current,tag=norse_adventure.ship_part.seat,tag=norse_adventure.ship.skeid.port_seat_5] ^1 ^-0.1 ^4
-tp @e[type=area_effect_cloud,tag=norse_adventure.current,tag=norse_adventure.ship_part.seat,tag=norse_adventure.ship.skeid.starboard_seat_5] ^-1 ^-0.1 ^4
-tp @e[type=area_effect_cloud,tag=norse_adventure.current,tag=norse_adventure.ship_part.seat,tag=norse_adventure.ship.skeid.port_seat_6] ^1 ^-0.1 ^5.55
-tp @e[type=area_effect_cloud,tag=norse_adventure.current,tag=norse_adventure.ship_part.seat,tag=norse_adventure.ship.skeid.starboard_seat_6] ^-1 ^-0.1 ^5.55
+tp @n[type=area_effect_cloud,tag=norse_adventure.current,tag=norse_adventure.ship_part.seat,tag=norse_adventure.ship.skeid.steering_seat] ^ ^0.03 ^-8
+tp @n[type=area_effect_cloud,tag=norse_adventure.current,tag=norse_adventure.ship_part.seat,tag=norse_adventure.ship.skeid.port_seat_1] ^1 ^-0.1 ^-5.55
+tp @n[type=area_effect_cloud,tag=norse_adventure.current,tag=norse_adventure.ship_part.seat,tag=norse_adventure.ship.skeid.starboard_seat_1] ^-1 ^-0.1 ^-5.55
+tp @n[type=area_effect_cloud,tag=norse_adventure.current,tag=norse_adventure.ship_part.seat,tag=norse_adventure.ship.skeid.port_seat_2] ^1 ^-0.1 ^-4
+tp @n[type=area_effect_cloud,tag=norse_adventure.current,tag=norse_adventure.ship_part.seat,tag=norse_adventure.ship.skeid.starboard_seat_2] ^-1 ^-0.1 ^-4
+tp @n[type=area_effect_cloud,tag=norse_adventure.current,tag=norse_adventure.ship_part.seat,tag=norse_adventure.ship.skeid.port_seat_3] ^1 ^-0.1 ^-2.6
+tp @n[type=area_effect_cloud,tag=norse_adventure.current,tag=norse_adventure.ship_part.seat,tag=norse_adventure.ship.skeid.starboard_seat_3] ^-1 ^-0.1 ^-2.6
+tp @n[type=area_effect_cloud,tag=norse_adventure.current,tag=norse_adventure.ship_part.seat,tag=norse_adventure.ship.skeid.port_seat_4] ^1 ^-0.1 ^2.6
+tp @n[type=area_effect_cloud,tag=norse_adventure.current,tag=norse_adventure.ship_part.seat,tag=norse_adventure.ship.skeid.starboard_seat_4] ^-1 ^-0.1 ^2.6
+tp @n[type=area_effect_cloud,tag=norse_adventure.current,tag=norse_adventure.ship_part.seat,tag=norse_adventure.ship.skeid.port_seat_5] ^1 ^-0.1 ^4
+tp @n[type=area_effect_cloud,tag=norse_adventure.current,tag=norse_adventure.ship_part.seat,tag=norse_adventure.ship.skeid.starboard_seat_5] ^-1 ^-0.1 ^4
+tp @n[type=area_effect_cloud,tag=norse_adventure.current,tag=norse_adventure.ship_part.seat,tag=norse_adventure.ship.skeid.port_seat_6] ^1 ^-0.1 ^5.55
+tp @n[type=area_effect_cloud,tag=norse_adventure.current,tag=norse_adventure.ship_part.seat,tag=norse_adventure.ship.skeid.starboard_seat_6] ^-1 ^-0.1 ^5.55
 
 
 # Chest
-tp @e[type=area_effect_cloud,tag=norse_adventure.current,tag=norse_adventure.ship.skeid.chest] ^ ^-0.6 ^6.5 ~ ~
+tp @n[type=area_effect_cloud,tag=norse_adventure.current,tag=norse_adventure.ship.skeid.chest] ^ ^-0.6 ^6.5 ~ ~
 
 
 # Sail
@@ -39,6 +39,16 @@ execute if score @s norse_adventure.speed matches ..2 run function norse_adventu
 execute if score @s norse_adventure.speed matches 3..4 run function norse_adventure:ships/skeid/sail/half
 execute if score @s norse_adventure.speed matches 5..6 run function norse_adventure:ships/skeid/sail/full
 execute if score @s norse_adventure.speed matches 7..8 run function norse_adventure:ships/skeid/sail/released
+
+
+# Floors
+tp @n[type=happy_ghast,tag=norse_adventure.current,tag=norse_adventure.ship_part.floor,tag=norse_adventure.ship.skeid.floor1] ^ ^-2.7 ^8
+tp @n[type=happy_ghast,tag=norse_adventure.current,tag=norse_adventure.ship_part.floor,tag=norse_adventure.ship.skeid.floor2] ^ ^-2.7 ^5.25
+tp @n[type=happy_ghast,tag=norse_adventure.current,tag=norse_adventure.ship_part.floor,tag=norse_adventure.ship.skeid.floor3] ^ ^-2.7 ^2.5
+tp @n[type=happy_ghast,tag=norse_adventure.current,tag=norse_adventure.ship_part.floor,tag=norse_adventure.ship.skeid.floor4] ^ ^-2.7 ^-0.25
+tp @n[type=happy_ghast,tag=norse_adventure.current,tag=norse_adventure.ship_part.floor,tag=norse_adventure.ship.skeid.floor5] ^ ^-2.7 ^-3
+tp @n[type=happy_ghast,tag=norse_adventure.current,tag=norse_adventure.ship_part.floor,tag=norse_adventure.ship.skeid.floor6] ^ ^-2.7 ^-5.75
+tp @n[type=happy_ghast,tag=norse_adventure.current,tag=norse_adventure.ship_part.floor,tag=norse_adventure.ship.skeid.floor7] ^ ^-2.7 ^-8.5
 
 
 # Area effect clouds

@@ -1,11 +1,12 @@
 {
     "values": [
-        "marker",
-        "area_effect_cloud",
-        "item_display",
-        "interaction",
-        "bat",
-        "pig",
-        "chest_minecart"
+        "minecraft:marker",
+        "minecraft:area_effect_cloud",
+        "minecraft:item_display",
+        "minecraft:interaction",
+        "minecraft:bat",
+        "minecraft:pig",
+        "minecraft:chest_minecart",
+        "minecraft:happy_ghast"
     ]
 }
