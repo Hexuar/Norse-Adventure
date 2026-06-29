@@ -12,4 +12,4 @@ scoreboard objectives add shiplib.entityID dummy
 scoreboard players add #register shiplib.entityID 0
 
 function #shiplib:ships/load_data
-execute as @e[type=item_display,tag=shiplib.ship] run function shiplib:ships/common/set_data
+execute as @e[type=item_display,tag=shiplib.ship] run function #shiplib:ships/set_data
