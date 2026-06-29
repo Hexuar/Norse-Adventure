@@ -11,5 +11,4 @@ scoreboard objectives remove shiplib.speed_increment
 scoreboard objectives remove shiplib.max_rotation
 scoreboard objectives remove shiplib.min_rotation
 scoreboard objectives remove shiplib.rotation_increment
-
 scoreboard objectives remove shiplib.entityID

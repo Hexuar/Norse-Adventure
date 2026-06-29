@@ -1,1 +1,0 @@
-function #shiplib:ships/craft_item
