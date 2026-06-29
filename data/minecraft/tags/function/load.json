@@ -1,6 +1,5 @@
 {
 	"values": [
-    	"norse_adventure:load",
-		"shiplib:load"
+    	"norse_adventure:load"
 	]
 }

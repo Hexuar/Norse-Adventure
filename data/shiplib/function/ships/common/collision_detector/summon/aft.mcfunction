@@ -1,1 +1,0 @@
-summon marker ~ ~ ~ {Tags:["shiplib.unregistered","shiplib.untagged","shiplib.entity","shiplib.ship_part.collision_detector","shiplib.ship_part.collision_detector.aft"]}

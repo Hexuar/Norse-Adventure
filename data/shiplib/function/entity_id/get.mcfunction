@@ -1,2 +1,0 @@
-scoreboard players operation #current shiplib.entityID = @s shiplib.entityID
-execute as @e[type=#shiplib:ship_entities,tag=shiplib.entity] if score @s shiplib.entityID = #current shiplib.entityID run tag @s add shiplib.current

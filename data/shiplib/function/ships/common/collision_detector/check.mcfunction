@@ -1,2 +1,0 @@
-execute store result score #collision_bow shiplib.value if entity @s[tag=shiplib.ship_part.collision_detector.bow] unless block ~ ~ ~ #shiplib:passable
-execute store result score #collision_aft shiplib.value if entity @s[tag=shiplib.ship_part.collision_detector.aft] unless block ~ ~ ~ #shiplib:passable
