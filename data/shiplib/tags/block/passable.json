@@ -1,0 +1,12 @@
+{
+    "values": [
+        "#shiplib:fallable",
+        "seagrass",
+        "tall_seagrass",
+        "kelp",
+        "kelp_plant",
+        "#corals",
+        "lily_pad",
+        "water"
+    ]
+}

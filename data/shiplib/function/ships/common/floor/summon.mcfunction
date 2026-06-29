@@ -1,0 +1,1 @@
+summon minecraft:happy_ghast ~ ~ ~ {Tags:["shiplib.ship_part.floor","shiplib.entity","shiplib.unregistered","shiplib.untagged"],NoAI:1b,Invulnerable:1b,Silent:1b,active_effects:[{id:"minecraft:invisibility",duration:-1,show_particles:false}]}

@@ -26,7 +26,7 @@
           "minecraft:vehicle": {
             "minecraft:entity_tags": {
               "any_of": [
-                "norse_adventure.ship_part.steering_seat"
+                "shiplib.ship_part.steering_seat"
               ]
             }
           }

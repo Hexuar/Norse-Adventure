@@ -22,7 +22,7 @@
         "entity": {
           "minecraft:entity_tags": {
             "any_of": [
-              "norse_adventure.ship_part.hitbox"
+              "shiplib.ship_part.hitbox"
             ]
           }
         }

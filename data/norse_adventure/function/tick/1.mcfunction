@@ -1,2 +1,0 @@
-execute as @e[type=item_display,tag=norse_adventure.ship] at @s if entity @p[distance=..10] run function norse_adventure:ships/common/tick
-execute as @e[type=marker,tag=norse_adventure.spawn] at @s run function norse_adventure:ships/common/spawn/check

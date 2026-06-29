@@ -4,109 +4,109 @@
 function norse_adventure:ships/karve/set_data
 
 # Base
-data merge entity @s {Tags:["norse_adventure.unregistered","norse_adventure.entity","norse_adventure.ship","norse_adventure.ship.karve"],item:{id:"minecraft:command_block",components:{item_model:"norse_adventure:karve","minecraft:custom_model_data":{floats:[0.0f]}}},transformation:{"translation":[0.0f,1.0f,0.0f],scale:[4.0f,4.0f,4.0f],left_rotation:[0.0f,0.0f,0.0f,1.0f],right_rotation:[0.0f,0.0f,0.0f,1.0f]},teleport_duration:2,interpolation_duration:1}
+data merge entity @s {Tags:["shiplib.unregistered","shiplib.entity","shiplib.ship","norse_adventure.ship.karve"],item:{id:"minecraft:command_block",components:{item_model:"norse_adventure:karve","minecraft:custom_model_data":{floats:[0.0f]}}},transformation:{"translation":[0.0f,1.0f,0.0f],scale:[4.0f,4.0f,4.0f],left_rotation:[0.0f,0.0f,0.0f,1.0f],right_rotation:[0.0f,0.0f,0.0f,1.0f]},teleport_duration:2,interpolation_duration:1}
 
 # Sail Rope
-summon area_effect_cloud ~ ~ ~ {Tags:["norse_adventure.entity","norse_adventure.ship_part","norse_adventure.ship_part.sail_rope","norse_adventure.unregistered"],Radius:0f,Age:999999,Passengers:[{id:"minecraft:interaction",width:0.6f,height:0.6f,Tags:["norse_adventure.entity","norse_adventure.ship_part","norse_adventure.ship_part.sail_rope","norse_adventure.unregistered"]}]}
+summon area_effect_cloud ~ ~ ~ {Tags:["shiplib.entity","shiplib.ship_part","shiplib.ship_part.sail_rope","shiplib.unregistered"],Radius:0f,Age:999999,Passengers:[{id:"minecraft:interaction",width:0.6f,height:0.6f,Tags:["shiplib.entity","shiplib.ship_part","shiplib.ship_part.sail_rope","shiplib.unregistered"]}]}
 
 # Rudder
-summon area_effect_cloud ~ ~ ~ {Tags:["norse_adventure.entity","norse_adventure.ship_part.rudder","norse_adventure.unregistered"],Radius:0f,Age:999999,Passengers:[{id:"minecraft:interaction",width:0.6f,height:0.6f,Tags:["norse_adventure.entity","norse_adventure.ship_part.rudder","norse_adventure.unregistered"]}]}
+summon area_effect_cloud ~ ~ ~ {Tags:["shiplib.entity","shiplib.ship_part.rudder","shiplib.unregistered"],Radius:0f,Age:999999,Passengers:[{id:"minecraft:interaction",width:0.6f,height:0.6f,Tags:["shiplib.entity","shiplib.ship_part.rudder","shiplib.unregistered"]}]}
 
 
 ## Chests
-function norse_adventure:ships/common/chest/summon
-execute as @e[type=area_effect_cloud,tag=norse_adventure.untagged] run tag @s add norse_adventure.ship.karve.chest
-execute as @e[type=area_effect_cloud,tag=norse_adventure.untagged] run tag @s remove norse_adventure.untagged
+function shiplib:ships/common/chest/summon
+execute as @e[type=#shiplib:crate_entity,tag=shiplib.untagged] run tag @s add norse_adventure.ship.karve.chest
+execute as @e[type=#shiplib:crate_entity,tag=shiplib.untagged] run tag @s remove shiplib.untagged
 
 
 ## Collision detectors
-function norse_adventure:ships/common/collision_detector/summon/bow
-execute as @e[type=marker,tag=norse_adventure.ship_part.collision_detector,tag=norse_adventure.untagged] run tag @s add norse_adventure.ship.karve.collision_detector.bow
-tag @e[type=marker,tag=norse_adventure.ship_part.collision_detector,tag=norse_adventure.untagged] remove norse_adventure.untagged
+function shiplib:ships/common/collision_detector/summon/bow
+execute as @e[type=marker,tag=shiplib.ship_part.collision_detector,tag=shiplib.untagged] run tag @s add norse_adventure.ship.karve.collision_detector.bow
+tag @e[type=marker,tag=shiplib.ship_part.collision_detector,tag=shiplib.untagged] remove shiplib.untagged
 
-function norse_adventure:ships/common/collision_detector/summon/aft
-execute as @e[type=marker,tag=norse_adventure.ship_part.collision_detector,tag=norse_adventure.untagged] run tag @s add norse_adventure.ship.karve.collision_detector.aft
-tag @e[type=marker,tag=norse_adventure.ship_part.collision_detector,tag=norse_adventure.untagged] remove norse_adventure.untagged
+function shiplib:ships/common/collision_detector/summon/aft
+execute as @e[type=marker,tag=shiplib.ship_part.collision_detector,tag=shiplib.untagged] run tag @s add norse_adventure.ship.karve.collision_detector.aft
+tag @e[type=marker,tag=shiplib.ship_part.collision_detector,tag=shiplib.untagged] remove shiplib.untagged
 
 
 ## Ropes
 
 # Bow Rope
-function norse_adventure:ships/common/rope/summon
-execute as @e[type=bat,tag=norse_adventure.ship_part.rope.anchor_point,tag=norse_adventure.untagged] run tag @s add norse_adventure.ship.karve.bow_rope
-tag @e[type=bat,tag=norse_adventure.ship_part.rope.anchor_point,tag=norse_adventure.untagged] remove norse_adventure.untagged
+function shiplib:ships/common/rope/summon
+execute as @e[type=bat,tag=shiplib.ship_part.rope.anchor_point,tag=shiplib.untagged] run tag @s add norse_adventure.ship.karve.bow_rope
+tag @e[type=bat,tag=shiplib.ship_part.rope.anchor_point,tag=shiplib.untagged] remove shiplib.untagged
 
 # Aft Rope
-function norse_adventure:ships/common/rope/summon
-execute as @e[type=bat,tag=norse_adventure.ship_part.rope.anchor_point,tag=norse_adventure.untagged] run tag @s add norse_adventure.ship.karve.aft_rope
-tag @e[type=bat,tag=norse_adventure.ship_part.rope.anchor_point,tag=norse_adventure.untagged] remove norse_adventure.untagged
+function shiplib:ships/common/rope/summon
+execute as @e[type=bat,tag=shiplib.ship_part.rope.anchor_point,tag=shiplib.untagged] run tag @s add norse_adventure.ship.karve.aft_rope
+tag @e[type=bat,tag=shiplib.ship_part.rope.anchor_point,tag=shiplib.untagged] remove shiplib.untagged
 
 # Upper Port Rope
-function norse_adventure:ships/common/rope/summon
-execute as @e[type=bat,tag=norse_adventure.ship_part.rope.anchor_point,tag=norse_adventure.untagged] run tag @s add norse_adventure.ship.karve.upper_port_rope
-tag @e[type=bat,tag=norse_adventure.ship_part.rope.anchor_point,tag=norse_adventure.untagged] remove norse_adventure.untagged
+function shiplib:ships/common/rope/summon
+execute as @e[type=bat,tag=shiplib.ship_part.rope.anchor_point,tag=shiplib.untagged] run tag @s add norse_adventure.ship.karve.upper_port_rope
+tag @e[type=bat,tag=shiplib.ship_part.rope.anchor_point,tag=shiplib.untagged] remove shiplib.untagged
 
 # Lower Port Rope
-function norse_adventure:ships/common/rope/summon
-execute as @e[type=bat,tag=norse_adventure.ship_part.rope.anchor_point,tag=norse_adventure.untagged] run tag @s add norse_adventure.ship.karve.lower_port_rope
-tag @e[type=bat,tag=norse_adventure.ship_part.rope.anchor_point,tag=norse_adventure.untagged] remove norse_adventure.untagged
+function shiplib:ships/common/rope/summon
+execute as @e[type=bat,tag=shiplib.ship_part.rope.anchor_point,tag=shiplib.untagged] run tag @s add norse_adventure.ship.karve.lower_port_rope
+tag @e[type=bat,tag=shiplib.ship_part.rope.anchor_point,tag=shiplib.untagged] remove shiplib.untagged
 
 # Upper Starboard Rope
-function norse_adventure:ships/common/rope/summon
-execute as @e[type=bat,tag=norse_adventure.ship_part.rope.anchor_point,tag=norse_adventure.untagged] run tag @s add norse_adventure.ship.karve.upper_starboard_rope
-tag @e[type=bat,tag=norse_adventure.ship_part.rope.anchor_point,tag=norse_adventure.untagged] remove norse_adventure.untagged
+function shiplib:ships/common/rope/summon
+execute as @e[type=bat,tag=shiplib.ship_part.rope.anchor_point,tag=shiplib.untagged] run tag @s add norse_adventure.ship.karve.upper_starboard_rope
+tag @e[type=bat,tag=shiplib.ship_part.rope.anchor_point,tag=shiplib.untagged] remove shiplib.untagged
 
 # Lower Starboard Rope
-function norse_adventure:ships/common/rope/summon
-execute as @e[type=bat,tag=norse_adventure.ship_part.rope.anchor_point,tag=norse_adventure.untagged] run tag @s add norse_adventure.ship.karve.lower_starboard_rope
-tag @e[type=bat,tag=norse_adventure.ship_part.rope.anchor_point,tag=norse_adventure.untagged] remove norse_adventure.untagged
+function shiplib:ships/common/rope/summon
+execute as @e[type=bat,tag=shiplib.ship_part.rope.anchor_point,tag=shiplib.untagged] run tag @s add norse_adventure.ship.karve.lower_starboard_rope
+tag @e[type=bat,tag=shiplib.ship_part.rope.anchor_point,tag=shiplib.untagged] remove shiplib.untagged
 
 
 ## Seats
 
 # Steering Seat
-function norse_adventure:ships/common/seat/summon
-execute as @e[tag=norse_adventure.ship_part.seat,tag=norse_adventure.untagged] run tag @s add norse_adventure.ship.karve.steering_seat
-execute as @e[tag=norse_adventure.ship_part.seat,tag=norse_adventure.untagged] run tag @s add norse_adventure.ship_part.steering_seat
-execute as @e[tag=norse_adventure.ship_part.seat,tag=norse_adventure.untagged] run tag @s remove norse_adventure.untagged
+function shiplib:ships/common/seat/summon
+execute as @e[tag=shiplib.ship_part.seat,tag=shiplib.untagged] run tag @s add norse_adventure.ship.karve.steering_seat
+execute as @e[tag=shiplib.ship_part.seat,tag=shiplib.untagged] run tag @s add shiplib.ship_part.steering_seat
+execute as @e[tag=shiplib.ship_part.seat,tag=shiplib.untagged] run tag @s remove shiplib.untagged
 
 # Port Seat
-function norse_adventure:ships/common/seat/summon
-execute as @e[tag=norse_adventure.ship_part.seat,tag=norse_adventure.untagged] run tag @s add norse_adventure.ship.karve.port_seat
-execute as @e[tag=norse_adventure.ship_part.seat,tag=norse_adventure.untagged] run tag @s remove norse_adventure.untagged
+function shiplib:ships/common/seat/summon
+execute as @e[tag=shiplib.ship_part.seat,tag=shiplib.untagged] run tag @s add norse_adventure.ship.karve.port_seat
+execute as @e[tag=shiplib.ship_part.seat,tag=shiplib.untagged] run tag @s remove shiplib.untagged
 
 # Starboard Seat
-function norse_adventure:ships/common/seat/summon
-execute as @e[tag=norse_adventure.ship_part.seat,tag=norse_adventure.untagged] run tag @s add norse_adventure.ship.karve.starboard_seat
-execute as @e[tag=norse_adventure.ship_part.seat,tag=norse_adventure.untagged] run tag @s remove norse_adventure.untagged
+function shiplib:ships/common/seat/summon
+execute as @e[tag=shiplib.ship_part.seat,tag=shiplib.untagged] run tag @s add norse_adventure.ship.karve.starboard_seat
+execute as @e[tag=shiplib.ship_part.seat,tag=shiplib.untagged] run tag @s remove shiplib.untagged
 
 
 ## Floors
 
 # Floor 1
-function norse_adventure:ships/common/floor/summon
-attribute @n[type=happy_ghast,tag=norse_adventure.ship_part.floor,tag=norse_adventure.untagged] minecraft:scale base set 0.7
-execute as @e[tag=norse_adventure.ship_part.floor,tag=norse_adventure.untagged] run tag @s add norse_adventure.ship.karve.floor1
-execute as @e[tag=norse_adventure.ship_part.floor,tag=norse_adventure.untagged] run tag @s remove norse_adventure.untagged
+function shiplib:ships/common/floor/summon
+attribute @n[type=happy_ghast,tag=shiplib.ship_part.floor,tag=shiplib.untagged] minecraft:scale base set 0.7
+execute as @e[tag=shiplib.ship_part.floor,tag=shiplib.untagged] run tag @s add norse_adventure.ship.karve.floor1
+execute as @e[tag=shiplib.ship_part.floor,tag=shiplib.untagged] run tag @s remove shiplib.untagged
 
 # Floor 2
-function norse_adventure:ships/common/floor/summon
-attribute @n[type=happy_ghast,tag=norse_adventure.ship_part.floor,tag=norse_adventure.untagged] minecraft:scale base set 0.7
-execute as @e[tag=norse_adventure.ship_part.floor,tag=norse_adventure.untagged] run tag @s add norse_adventure.ship.karve.floor2
-execute as @e[tag=norse_adventure.ship_part.floor,tag=norse_adventure.untagged] run tag @s remove norse_adventure.untagged
+function shiplib:ships/common/floor/summon
+attribute @n[type=happy_ghast,tag=shiplib.ship_part.floor,tag=shiplib.untagged] minecraft:scale base set 0.7
+execute as @e[tag=shiplib.ship_part.floor,tag=shiplib.untagged] run tag @s add norse_adventure.ship.karve.floor2
+execute as @e[tag=shiplib.ship_part.floor,tag=shiplib.untagged] run tag @s remove shiplib.untagged
 
 # Floor 3
-function norse_adventure:ships/common/floor/summon
-attribute @n[type=happy_ghast,tag=norse_adventure.ship_part.floor,tag=norse_adventure.untagged] minecraft:scale base set 0.7
-execute as @e[tag=norse_adventure.ship_part.floor,tag=norse_adventure.untagged] run tag @s add norse_adventure.ship.karve.floor3
-execute as @e[tag=norse_adventure.ship_part.floor,tag=norse_adventure.untagged] run tag @s remove norse_adventure.untagged
+function shiplib:ships/common/floor/summon
+attribute @n[type=happy_ghast,tag=shiplib.ship_part.floor,tag=shiplib.untagged] minecraft:scale base set 0.7
+execute as @e[tag=shiplib.ship_part.floor,tag=shiplib.untagged] run tag @s add norse_adventure.ship.karve.floor3
+execute as @e[tag=shiplib.ship_part.floor,tag=shiplib.untagged] run tag @s remove shiplib.untagged
 
 # Floor 4
-function norse_adventure:ships/common/floor/summon
-attribute @n[type=happy_ghast,tag=norse_adventure.ship_part.floor,tag=norse_adventure.untagged] minecraft:scale base set 0.7
-execute as @e[tag=norse_adventure.ship_part.floor,tag=norse_adventure.untagged] run tag @s add norse_adventure.ship.karve.floor4
-execute as @e[tag=norse_adventure.ship_part.floor,tag=norse_adventure.untagged] run tag @s remove norse_adventure.untagged
+function shiplib:ships/common/floor/summon
+attribute @n[type=happy_ghast,tag=shiplib.ship_part.floor,tag=shiplib.untagged] minecraft:scale base set 0.7
+execute as @e[tag=shiplib.ship_part.floor,tag=shiplib.untagged] run tag @s add norse_adventure.ship.karve.floor4
+execute as @e[tag=shiplib.ship_part.floor,tag=shiplib.untagged] run tag @s remove shiplib.untagged
 
 
 # Common
-function norse_adventure:ships/common/summon
+function shiplib:ships/common/summon

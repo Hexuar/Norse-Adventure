@@ -16,7 +16,7 @@
                 "item_model": "norse_adventure:knarr",
                 "minecraft:entity_data": {
                   "id": "minecraft:marker",
-                  "Tags": ["norse_adventure.entity","norse_adventure.spawn","norse_adventure.spawn.knarr"]
+                  "Tags": ["shiplib.entity","shiplib.spawn","norse_adventure.spawn.knarr"]
                 }
               }
             }
