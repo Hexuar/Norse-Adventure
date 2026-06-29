@@ -2,7 +2,6 @@
 function shiplib:entity_id/get
 
 
-
 # Destroy
 scoreboard players set #destroy shiplib.value 1
 execute on passengers if entity @s[type=villager,tag=shiplib.ship_part.hitbox] run scoreboard players set #destroy shiplib.value 0
@@ -50,11 +49,13 @@ execute if entity @e[type=area_effect_cloud,tag=shiplib.ship_part.rudder,distanc
 execute if score #assemble shiplib.value matches 1 run function #shiplib:ships/assemble
 scoreboard players set #assemble shiplib.value 0
 
+
 # Gravity
 execute if block ~ ~-2 ~ #shiplib:fallable run tp ~ ~-1 ~
 execute unless block ~ ~-2 ~ #shiplib:fallable if block ~ ~-1 ~ #shiplib:fallable run tp ~ ~-0.5 ~
 execute unless block ~ ~-1 ~ #shiplib:fallable if block ~ ~ ~ #shiplib:fallable run tp ~ ~-0.1 ~
 execute if block ~ ~ ~ #shiplib:fallable run scoreboard players set #assemble shiplib.value 1
+
 
 # Remove tags
 tag @e[type=#shiplib:ship_entities,tag=shiplib.current] remove shiplib.current
