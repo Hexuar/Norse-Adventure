@@ -1,3 +1,8 @@
+tp @s ~ ~1 ~
+
+function #shiplib:ships/summon
+tag @s remove shiplib.spawn
+
 data modify entity @s Rotation[0] set from entity @p[distance=..5] Rotation[0]
 
 # Hitbox
@@ -8,7 +13,9 @@ ride @e[type=villager,tag=shiplib.ship_part.hitbox,tag=shiplib.unregistered,sort
 scoreboard players set @s shiplib.rotation 0
 scoreboard players set @s shiplib.speed 0
 
-
-
+# ID
 execute as @e[tag=shiplib.unregistered] run function shiplib:entity_id/register
 scoreboard players add #register shiplib.entityID 1
+
+# Assemble
+function #shiplib:ships/assemble

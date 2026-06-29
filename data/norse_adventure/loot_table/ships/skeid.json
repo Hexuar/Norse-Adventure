@@ -15,7 +15,7 @@
                 },
                 "item_model": "norse_adventure:skeid",
                 "minecraft:entity_data": {
-                  "id": "minecraft:marker",
+                  "id": "minecraft:item_display",
                   "Tags": ["shiplib.entity","shiplib.spawn","norse_adventure.spawn.skeid"]
                 }
               }

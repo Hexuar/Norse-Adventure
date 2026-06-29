@@ -1,2 +1,2 @@
 execute as @e[type=item_display,tag=shiplib.ship] at @s if entity @p[distance=..10] run function shiplib:ships/common/tick
-execute as @e[type=marker,tag=shiplib.spawn] at @s run function shiplib:ships/common/spawn/check
+execute as @e[type=item_display,tag=shiplib.spawn] at @s run function shiplib:ships/common/spawn/check
