@@ -33,10 +33,3 @@ tp @n[type=happy_ghast,tag=shiplib.current,tag=shiplib.ship_part.floor,tag=norse
 tp @n[type=happy_ghast,tag=shiplib.current,tag=shiplib.ship_part.floor,tag=norse_adventure.ship.karve.floor2] ^ ^-2.55 ^1
 tp @n[type=happy_ghast,tag=shiplib.current,tag=shiplib.ship_part.floor,tag=norse_adventure.ship.karve.floor3] ^ ^-2.55 ^-1.5
 tp @n[type=happy_ghast,tag=shiplib.current,tag=shiplib.ship_part.floor,tag=norse_adventure.ship.karve.floor4] ^ ^-2.55 ^-4
-
-
-# Area effect clouds
-execute as @e[type=#shiplib:fix_rotation,tag=shiplib.current,tag=!shiplib.ship_part.rudder] run data modify entity @s Rotation set from entity @e[type=item_display,tag=shiplib.current,tag=norse_adventure.ship.karve,sort=nearest,limit=1] Rotation
-
-execute as @e[type=area_effect_cloud,tag=shiplib.current] run data modify entity @s Air set value 1b
-execute as @e[type=area_effect_cloud,tag=shiplib.current] run data modify entity @s Air set value 0b

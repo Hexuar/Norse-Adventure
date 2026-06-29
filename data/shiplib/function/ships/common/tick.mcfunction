@@ -42,12 +42,21 @@ execute store result storage shiplib:data move.rotation float 0.1 run scoreboard
 function shiplib:ships/common/move with storage shiplib:data move
 
 
+# Fix rotation of entities
+#execute as @e[type=#shiplib:fix_rotation,tag=shiplib.current] run data modify entity @s Rotation set from entity @e[type=item_display,tag=shiplib.current,tag=shiplib.ship,sort=nearest,limit=1] Rotation
+
+
 # Assemble
 execute unless score @s shiplib.speed matches 0 run scoreboard players set #assemble shiplib.value 1
 execute unless score @s shiplib.rotation matches 0 run scoreboard players set #assemble shiplib.value 1
 execute if entity @e[type=area_effect_cloud,tag=shiplib.ship_part.rudder,distance=..1] run scoreboard players set #assemble shiplib.value 1
 execute if score #assemble shiplib.value matches 1 run function #shiplib:ships/assemble
 scoreboard players set #assemble shiplib.value 0
+
+
+# Update aecs
+execute as @e[type=area_effect_cloud,tag=shiplib.current] run data modify entity @s Air set value 1b
+execute as @e[type=area_effect_cloud,tag=shiplib.current] run data modify entity @s Air set value 0b
 
 
 # Gravity

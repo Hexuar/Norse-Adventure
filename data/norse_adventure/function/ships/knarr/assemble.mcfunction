@@ -37,10 +37,3 @@ execute if score @s shiplib.speed matches 4 run function norse_adventure:ships/k
 tp @n[type=happy_ghast,tag=shiplib.current,tag=shiplib.ship_part.floor,tag=norse_adventure.ship.knarr.floor1] ^ ^-3.4 ^3.5
 tp @n[type=happy_ghast,tag=shiplib.current,tag=shiplib.ship_part.floor,tag=norse_adventure.ship.knarr.floor2] ^ ^-3.4 ^
 tp @n[type=happy_ghast,tag=shiplib.current,tag=shiplib.ship_part.floor,tag=norse_adventure.ship.knarr.floor3] ^ ^-3.4 ^-3.5
-
-
-# Area effect clouds
-execute as @e[type=#shiplib:fix_rotation,tag=shiplib.current,tag=!shiplib.ship_part.rudder] run data modify entity @s Rotation set from entity @e[type=item_display,tag=shiplib.current,tag=norse_adventure.ship.knarr,sort=nearest,limit=1] Rotation
-
-execute as @e[type=area_effect_cloud,tag=shiplib.current] run data modify entity @s Air set value 1b
-execute as @e[type=area_effect_cloud,tag=shiplib.current] run data modify entity @s Air set value 0b
