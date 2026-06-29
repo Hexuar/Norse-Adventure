@@ -1,6 +1,5 @@
 {
 	"values": [
-		"norse_adventure:tick/manager",
 		"shiplib:tick/manager"
 	]
 }

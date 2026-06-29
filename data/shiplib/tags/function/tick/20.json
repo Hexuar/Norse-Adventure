@@ -1,0 +1,6 @@
+{
+    "values": [
+        "shiplib:tick/20",
+        "norse_adventure:tick/20"
+    ]
+}
