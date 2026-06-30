@@ -1,8 +1,5 @@
 ## Base
 
-# Scores
-function norse_adventure:ships/knarr/set_data
-
 # Base
 data merge entity @s {Tags:["shiplib.unregistered","shiplib.entity","shiplib.ship","norse_adventure.ship.knarr"],item:{id:"minecraft:command_block",components:{item_model:"norse_adventure:knarr","minecraft:custom_model_data":{floats:[0.0f]}}},transformation:{"translation":[0.0f,1.5f,0.0f],scale:[4.0f,4.0f,4.0f],left_rotation:[0.0f,0.0f,0.0f,1.0f],right_rotation:[0.0f,0.0f,0.0f,1.0f]},teleport_duration:2,interpolation_duration:1}
 

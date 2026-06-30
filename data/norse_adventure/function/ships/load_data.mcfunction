@@ -1,0 +1,3 @@
+function norse_adventure:ships/karve/load_data
+function norse_adventure:ships/knarr/load_data
+function norse_adventure:ships/skeid/load_data
