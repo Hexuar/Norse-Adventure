@@ -25,7 +25,7 @@
         "entity": {
           "minecraft:entity_tags": {
             "any_of": [
-              "shiplib.ship_part.rudder"
+              "shiplib.ship_part.steering"
             ]
           }
         }
@@ -37,7 +37,7 @@
         "entity": {
           "minecraft:entity_tags": {
             "any_of": [
-              "shiplib.ship_part.rudder"
+              "shiplib.ship_part.steering"
             ]
           }
         }
