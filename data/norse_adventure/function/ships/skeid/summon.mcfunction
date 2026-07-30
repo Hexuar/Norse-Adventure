@@ -3,12 +3,6 @@
 # Base
 data merge entity @s {Tags:["shiplib.unregistered","shiplib.entity","shiplib.ship","norse_adventure.ship.skeid"],item:{id:"minecraft:command_block",components:{item_model:"norse_adventure:skeid","minecraft:custom_model_data":{floats:[0.0f]}}},transformation:{"translation":[0.0f,1.0f,0.0f],scale:[8.0f,8.0f,8.0f],left_rotation:[0.0f,0.0f,0.0f,1.0f],right_rotation:[0.0f,0.0f,0.0f,1.0f]}}
 
-# Sail Rope
-summon area_effect_cloud ~ ~ ~ {Tags:["shiplib.entity","shiplib.ship_part","shiplib.ship_part.acceleration","shiplib.unregistered"],Radius:0f,Age:999999,Passengers:[{id:"minecraft:interaction",width:0.6f,height:0.6f,Tags:["shiplib.entity","shiplib.ship_part","shiplib.ship_part.acceleration","shiplib.unregistered"]}]}
-
-# Rudder
-summon area_effect_cloud ~ ~ ~ {Tags:["shiplib.entity","shiplib.ship_part.steering","shiplib.unregistered"],Radius:0f,Age:999999,Passengers:[{id:"minecraft:interaction",width:0.6f,height:0.6f,Tags:["shiplib.entity","shiplib.ship_part.steering","shiplib.unregistered"]}]}
-
 
 ## Chests
 function shiplib:part/chest/summon

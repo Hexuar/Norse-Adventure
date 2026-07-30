@@ -5,15 +5,6 @@ tp @n[type=marker,tag=shiplib.current,tag=norse_adventure.ship.knarr.collision_d
 tp @n[type=marker,tag=shiplib.current,tag=norse_adventure.ship.knarr.collision_detector.aft_b] ^-1 ^ ^-5.2
 
 
-# Rudder
-tp @n[type=area_effect_cloud,tag=shiplib.current,tag=shiplib.ship_part.steering] ^-1.7 ^0.95 ^-3 ~ ~
-execute store result entity @s item.components."minecraft:custom_model_data".floats[1] float 1.0 run scoreboard players get @s shiplib.rotation
-
-
-# Sail interaction
-tp @n[type=area_effect_cloud,tag=shiplib.current,tag=shiplib.ship_part.acceleration] ^1.7 ^0.75 ^-3.1
-
-
 # Seats
 tp @n[type=area_effect_cloud,tag=shiplib.current,tag=shiplib.ship_part.seat,tag=norse_adventure.ship.knarr.steering_seat] ^ ^-0.3 ^-3.9
 tp @n[type=area_effect_cloud,tag=shiplib.current,tag=shiplib.ship_part.seat,tag=norse_adventure.ship.knarr.port_seat] ^0.5 ^-0.3 ^3.95
