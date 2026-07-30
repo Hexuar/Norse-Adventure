@@ -16,7 +16,8 @@
                 "item_model": "norse_adventure:karve",
                 "minecraft:entity_data": {
                   "id": "minecraft:item_display",
-                  "Tags": ["shiplib.entity","shiplib.spawn","norse_adventure.ship.karve"]
+                  "Tags": ["shiplib.entity","shiplib.spawn","norse_adventure.ship.karve"],
+                  "item": {"id":"minecraft:command_block","count": 1,"components":{"item_model":"norse_adventure:karve"}}
                 }
               }
             }

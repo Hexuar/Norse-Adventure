@@ -1,1 +1,18 @@
-execute as @e[type=item,nbt={Item:{id:"minecraft:iron_ingot",count:16}}] at @s at @e[type=item,nbt={Item:{id:"minecraft:white_wool",count:8}},distance=..1,sort=nearest,limit=1] at @e[type=item,nbt={Item:{id:"minecraft:oak_log",count:8}},distance=..1,sort=nearest,limit=1] at @e[type=item,nbt={Item:{id:"minecraft:oak_planks",count:64}},distance=..1,sort=nearest,limit=1] run function norse_adventure:ships/knarr/item/craft
+execute as @e[type=item,distance=..1] if items entity @s contents #minecraft:wool[count=8] run tag @s add norse_adventure.possible_ingredient
+execute as @n[tag=norse_adventure.possible_ingredient] run tag @s add norse_adventure.ingredient
+execute unless entity @n[tag=norse_adventure.possible_ingredient] run return fail
+tag @e remove norse_adventure.possible_ingredient
+
+execute as @e[type=item,distance=..1] if items entity @s contents #minecraft:logs[count=8] run tag @s add norse_adventure.possible_ingredient
+execute as @n[tag=norse_adventure.possible_ingredient] run tag @s add norse_adventure.ingredient
+execute unless entity @n[tag=norse_adventure.possible_ingredient] run return fail
+tag @e remove norse_adventure.possible_ingredient
+
+execute as @e[type=item,distance=..1] if items entity @s contents #minecraft:planks[count=64] run tag @s add norse_adventure.possible_ingredient
+execute as @n[tag=norse_adventure.possible_ingredient] run tag @s add norse_adventure.ingredient
+execute unless entity @n[tag=norse_adventure.possible_ingredient] run return fail
+tag @e remove norse_adventure.possible_ingredient
+
+tag @s add norse_adventure.ingredient
+
+function norse_adventure:ships/knarr/item/craft

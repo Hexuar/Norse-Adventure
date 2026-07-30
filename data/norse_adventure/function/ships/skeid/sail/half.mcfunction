@@ -1,4 +1,4 @@
-data modify entity @s item.components."minecraft:custom_model_data".floats[0] set value 0.1f
+data merge entity @s {item:{components:{"minecraft:custom_model_data":{floats:[0.1]}}}}
 
 
 ## Ropes

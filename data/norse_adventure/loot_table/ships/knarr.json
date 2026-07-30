@@ -16,7 +16,8 @@
                 "item_model": "norse_adventure:knarr",
                 "minecraft:entity_data": {
                   "id": "minecraft:item_display",
-                  "Tags": ["shiplib.entity","shiplib.spawn","norse_adventure.ship.knarr"]
+                  "Tags": ["shiplib.entity","shiplib.spawn","norse_adventure.ship.knarr"],
+                  "item": {"id":"minecraft:command_block","count": 1,"components":{"item_model":"norse_adventure:knarr"}}
                 }
               }
             }
