@@ -1,0 +1,1 @@
+$title @p[tag=shiplib.steering_player] actionbar [{translate:"title.norse_adventure.steering_ui", with:["$(speed)","$(rotation)"], color:"gray"}]
