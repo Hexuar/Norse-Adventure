@@ -1,0 +1,31 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:command_block",
+      "components": {
+        "minecraft:item_model": "norse_adventure:karve"
+      }
+    },
+    "title": {
+      "translate": "advancements.norse_adventure.karve.title"
+    },
+    "description": [
+      {"translate": "advancements.norse_adventure.karve.description", "extra": ["\n\n"]},
+      {"translate": "advancements.norse_adventure.recipe", "color": "gray", "extra": ["\n"]},
+      {"translate": "advancements.norse_adventure.recipe.iron", "with": ["8"], "extra": ["\n"], "color": "gray"},
+      {"translate": "advancements.norse_adventure.recipe.planks", "with": ["32"], "extra": ["\n"], "color": "gray"},
+      {"translate": "advancements.norse_adventure.recipe.logs", "with": ["8"], "extra": ["\n"], "color": "gray"},
+      {"translate": "advancements.norse_adventure.recipe.wool", "with": ["8"], "color": "gray"}
+    ],
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "norse_adventure:root",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

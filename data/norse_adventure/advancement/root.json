@@ -7,11 +7,12 @@
         }
       },
       "title": {
-        "translate": "advancements.norse_adventure.tutorial.root.title"
+        "translate": "advancements.norse_adventure.root.title"
       },
-      "description": {
-        "translate": "advancements.norse_adventure.tutorial.root.description"
-      },
+      "description": [
+        {"translate": "advancements.norse_adventure.root.description", "extra": ["\n\n"]},
+        {"translate": "advancements.norse_adventure.crafting_note", "color": "gray"}
+      ],
       "background": "minecraft:block/oak_planks",
       "show_toast": false,
       "announce_to_chat": false,

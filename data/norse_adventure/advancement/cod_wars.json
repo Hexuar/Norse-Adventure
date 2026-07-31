@@ -4,17 +4,17 @@
       "id": "minecraft:cod"
     },
     "title": {
-      "translate": "advancements.norse_adventure.tutorial.cod_wars.title"
+      "translate": "advancements.norse_adventure.cod_wars.title"
     },
     "description": {
-      "translate": "advancements.norse_adventure.tutorial.cod_wars.description"
+      "translate": "advancements.norse_adventure.cod_wars.description"
     },
     "frame": "challenge",
     "show_toast": true,
     "announce_to_chat": true,
     "hidden": false
   },
-  "parent": "norse_adventure:tutorial/karve",
+  "parent": "norse_adventure:karve",
   "criteria": {
     "steering_seat": {
       "trigger": "minecraft:fishing_rod_hooked",

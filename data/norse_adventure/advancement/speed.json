@@ -1,0 +1,23 @@
+{
+  "parent": "norse_adventure:skeid",
+  "display": {
+    "icon": {
+      "id": "minecraft:map"
+    },
+    "title": {
+      "translate": "advancements.norse_adventure.speed.title"
+    },
+    "description": {
+      "translate": "advancements.norse_adventure.speed.description"
+    },
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false,
+    "frame": "challenge"
+  },
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

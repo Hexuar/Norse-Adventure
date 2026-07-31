@@ -1,0 +1,31 @@
+{
+  "parent": "norse_adventure:root",
+  "display": {
+    "icon": {
+      "id": "minecraft:command_block",
+      "components": {
+        "minecraft:item_model": "norse_adventure:knarr"
+      }
+    },
+    "title": {
+      "translate": "advancements.norse_adventure.knarr.title"
+    },
+    "description": [
+      {"translate": "advancements.norse_adventure.knarr.description", "extra": ["\n\n"]},
+      {"translate": "advancements.norse_adventure.recipe", "color": "gray", "extra": ["\n"]},
+      {"translate": "advancements.norse_adventure.recipe.iron", "with": ["16"], "extra": ["\n"], "color": "gray"},
+      {"translate": "advancements.norse_adventure.recipe.planks", "with": ["64"], "extra": ["\n"], "color": "gray"},
+      {"translate": "advancements.norse_adventure.recipe.logs", "with": ["8"], "extra": ["\n"], "color": "gray"},
+      {"translate": "advancements.norse_adventure.recipe.wool", "with": ["8"], "color": "gray"}
+    ],
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false,
+    "frame": "task"
+  },
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

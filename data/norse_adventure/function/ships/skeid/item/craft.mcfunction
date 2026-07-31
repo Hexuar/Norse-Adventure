@@ -6,7 +6,7 @@ execute as @e[tag=norse_adventure.ingredient] if items entity @s contents #minec
 execute as @e[tag=norse_adventure.ingredient] if items entity @s contents #minecraft:wool run data modify entity @n[type=marker,tag=norse_adventure.loot_data] data.custom_model_data.strings[1] set from entity @s Item.id
 schedule function norse_adventure:ships/set_loot_data 1t append
 
-advancement grant @p[distance=..10] only norse_adventure:tutorial/skeid
+advancement grant @p[distance=..10] only norse_adventure:skeid
 playsound block.anvil.use player @a ~ ~ ~ 1 0.9
 
 kill @e[tag=norse_adventure.ingredient]

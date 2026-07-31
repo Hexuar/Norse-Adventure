@@ -1,0 +1,31 @@
+{
+  "parent": "norse_adventure:root",
+  "display": {
+    "icon": {
+      "id": "minecraft:command_block",
+      "components": {
+        "minecraft:item_model": "norse_adventure:skeid"
+      }
+    },
+    "title": {
+      "translate": "advancements.norse_adventure.skeid.title"
+    },
+    "description": [
+      {"translate": "advancements.norse_adventure.skeid.description", "extra": ["\n\n"]},
+      {"translate": "advancements.norse_adventure.recipe", "color": "gray", "extra": ["\n"]},
+      {"translate": "advancements.norse_adventure.recipe.iron", "with": ["32"], "extra": ["\n"], "color": "gray"},
+      {"translate": "advancements.norse_adventure.recipe.planks", "with": ["64"], "extra": ["\n"], "color": "gray"},
+      {"translate": "advancements.norse_adventure.recipe.logs", "with": ["16"], "extra": ["\n"], "color": "gray"},
+      {"translate": "advancements.norse_adventure.recipe.wool", "with": ["16"], "color": "gray"}
+    ],
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false,
+    "frame": "task"
+  },
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

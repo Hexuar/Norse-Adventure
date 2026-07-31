@@ -1,14 +1,14 @@
 {
-  "parent": "norse_adventure:tutorial/knarr",
+  "parent": "norse_adventure:knarr",
   "display": {
     "icon": {
       "id": "minecraft:iron_block"
     },
     "title": {
-      "translate": "advancements.norse_adventure.tutorial.heavy_load.title"
+      "translate": "advancements.norse_adventure.heavy_load.title"
     },
     "description": {
-      "translate": "advancements.norse_adventure.tutorial.heavy_load.description"
+      "translate": "advancements.norse_adventure.heavy_load.description"
     },
     "frame": "challenge",
     "show_toast": true,

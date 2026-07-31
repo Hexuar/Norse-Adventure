@@ -1,14 +1,14 @@
 {
-  "parent": "norse_adventure:tutorial/karve",
+  "parent": "norse_adventure:steering_seat",
   "display": {
     "icon": {
       "id": "minecraft:iron_axe"
     },
     "title": {
-      "translate": "advancements.norse_adventure.tutorial.destruction.title"
+      "translate": "advancements.norse_adventure.destruction.title"
     },
     "description": {
-      "translate": "advancements.norse_adventure.tutorial.destruction.description"
+      "translate": "advancements.norse_adventure.destruction.description"
     },
     "frame": "task",
     "show_toast": true,

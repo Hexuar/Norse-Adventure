@@ -1,17 +1,14 @@
 {
-  "parent": "norse_adventure:tutorial/root",
+  "parent": "norse_adventure:root",
   "display": {
     "icon": {
-      "id": "minecraft:command_block",
-      "components": {
-        "minecraft:item_model": "norse_adventure:karve"
-      }
+      "id": "minecraft:saddle"
     },
     "title": {
-      "translate": "advancements.norse_adventure.tutorial.steering_seat.title"
+      "translate": "advancements.norse_adventure.steering_seat.title"
     },
     "description": {
-      "translate": "advancements.norse_adventure.tutorial.steering_seat.description"
+      "translate": "advancements.norse_adventure.steering_seat.description"
     },
     "frame": "task",
     "show_toast": true,
